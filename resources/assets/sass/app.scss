@@ -19,6 +19,19 @@ body {
     border-top: 4px solid #00b5ad;
     margin-bottom: 40px;
     margin-top: 0px;
+
+    .dropdown-menu {
+        padding: 0px;
+
+        li a {
+            border-bottom: 1px solid #d8d8d8;
+            line-height: 2.4;
+
+            .glyphicon {
+                margin-right: 8px;
+            }
+        }
+    }
 }
 /* Sticky footer styles */
 
@@ -69,6 +82,30 @@ body {
         .thumbnail {
             margin-bottom: 0px;
         }
+    }
+
+    .nav-tabs {
+        margin-bottom: 20px;
+
+        >li.active > a {
+            background-color: #fff;
+        }
+    }
+
+    .list-group {
+        .list-group-item {
+            border: none;
+            margin-bottom: 0px;
+            border-bottom: 1px solid #efefef;
+
+            .meta {
+                color: #b3b3b3;
+            }
+        }
+    }
+
+    .pagination {
+        margin: 12px 0;
     }
 }
 
