@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fde8b6145da95e6e31bb99aa4ab55922",
+    "content-hash": "9422a1ab0dc87f9b17c334d1f1349edd",
     "packages": [
         {
             "name": "caouecs/laravel-lang",
@@ -4513,6 +4513,69 @@
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
             "time": "2016-10-03T07:35:21+00:00"
+        },
+        {
+            "name": "summerblue/generator",
+            "version": "0.5.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/summerblue/generator.git",
+                "reference": "ff0b99bde3efdd6106e9b8045ca8bf73f2d29868"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/summerblue/generator/zipball/ff0b99bde3efdd6106e9b8045ca8bf73f2d29868",
+                "reference": "ff0b99bde3efdd6106e9b8045ca8bf73f2d29868",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "laravel/laravel": "5.5.*",
+                "phpunit/phpunit": "~5.7"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Summerblue\\Generator\\GeneratorsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Summerblue\\Generator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fernando Brito",
+                    "email": "fernandobritofl@gmail.com"
+                },
+                {
+                    "name": "Summer",
+                    "email": "summer@yousails.com"
+                }
+            ],
+            "description": "Extend Laravel 5.5's generators scaffold.",
+            "keywords": [
+                "generators",
+                "laravel",
+                "laravel5",
+                "scaffold"
+            ],
+            "time": "2017-09-18T00:58:53+00:00"
         },
         {
             "name": "theseer/tokenizer",
