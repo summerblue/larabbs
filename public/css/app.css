@@ -8981,3 +8981,17 @@ body {
   color: #b3b3b3;
 }
 
+/* Notifications badge */
+
+.notifications-badge {
+  margin-top: -1;
+}
+
+.notifications-badge .badge-fade {
+  background-color: #EBE8E8;
+}
+
+.notifications-badge .badge-hint {
+  background-color: #d15b47 !important;
+}
+
