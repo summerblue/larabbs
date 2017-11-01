@@ -107,6 +107,14 @@ body {
     .pagination {
         margin: 12px 0;
     }
+
+    .meta {
+        font-size: .9em;
+        color: #b3b3b3;
+    }
+    .rpely-content {
+        margin: 6px 0;
+    }
 }
 
 /* Topic Index Page */
@@ -154,5 +162,21 @@ body {
             font-size: 28px;
             line-height: 38px;
         }
+    }
+}
+
+.topic-reply {
+    hr {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    a {
+        color: inherit;
+    }
+
+    .meta {
+        font-size: .9em;
+        color: #b3b3b3;
     }
 }

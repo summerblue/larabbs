@@ -8452,6 +8452,15 @@ body {
   margin: 12px 0;
 }
 
+.users-show-page .meta {
+  font-size: .9em;
+  color: #b3b3b3;
+}
+
+.users-show-page .rpely-content {
+  margin: 6px 0;
+}
+
 /* Topic Index Page */
 
 .topics-index-page .topic-list .nav > li > a,
@@ -8956,5 +8965,19 @@ body {
   margin: 0.4em auto 0.6em;
   font-size: 28px;
   line-height: 38px;
+}
+
+.topic-reply hr {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.topic-reply a {
+  color: inherit;
+}
+
+.topic-reply .meta {
+  font-size: .9em;
+  color: #b3b3b3;
 }
 
