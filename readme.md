@@ -30,7 +30,7 @@ LaraBBS 是一个简洁的论坛应用，使用 Laravel5.5 编写而成。一步
 ## 运行环境要求
 
 - Nginx 1.8+
-- PHP 7.0+
+- PHP 7.1+
 - Mysql 5.7+
 - Redis 3.0+
 - Memcached 1.4+
