@@ -92,20 +92,16 @@ homestead provision
 cp .env.example .env
 ```
 
-你可以根据情况修改 `.env` 文件里的内容，如数据库连接、缓存、邮件设置等：
+你可以根据情况修改 `.env` 文件里的内容，如数据库连接、缓存、邮件设置等。
 
-```
-APP_URL=http://larabbs.app
-...
-DB_HOST=localhost
-DB_DATABASE=larabbs
-DB_USERNAME=homestead
-DB_PASSWORD=secret
 
-DOMAIN=.larabbs.app
+#### 5. 生成秘钥
+
+```shell
+php artisan key:generate
 ```
 
-#### 5. 生成数据表及生成测试数据
+#### 6. 生成数据表及生成测试数据
 
 在 Homestead 的网站根目录下运行以下命令
 
@@ -115,13 +111,8 @@ $ php artisan migrate --seed
 
 初始的用户角色权限已使用数据迁移生成。
 
-#### 7. 生成秘钥
 
-```shell
-php artisan key:generate
-```
-
-#### 8. 配置 hosts 文件
+#### 7. 配置 hosts 文件
 
     echo "192.168.10.10   phphub.app" | sudo tee -a /etc/hosts
 
@@ -157,7 +148,6 @@ npm run production
 npm run watch
 
 // 在某些环境中，当文件更改时，Webpack 不会更新。如果系统出现这种情况，请考虑使用 watch-poll 命令：
-
 npm run watch-poll
 ```
 
