@@ -65,7 +65,7 @@ folders:
       to: /home/vagrant/larabbs
 
 sites:
-    - map: larabbs.app
+    - map: larabbs.test
       to: /home/vagrant/larabbs/public
 
 databases:
@@ -153,8 +153,8 @@ npm run watch-poll
 
 ### 链接入口
 
-* 首页地址：http://larabbs.app/
-* 管理后台：http://larabbs.app/admin
+* 首页地址：http://larabbs.test/
+* 管理后台：http://larabbs.test/admin
 
 管理员账号密码如下:
 
