@@ -17,13 +17,21 @@ $api = app('Dingo\Api\Routing\Router');
 
 $api->version('v1', [
     'namespace' => 'App\Http\Controllers\Api',
-    'middleware' => "serializer:array"
-], function($api) {
-    // 短信验证码
-    $api->post('verificationCodes', 'VerificationCodesController@store')
-        ->name('api.verificationCodes.store');
-    // 用户注册
-    $api->post('users', 'UsersController@store')
-        ->name('api.users.store');
-});
+], function ($api) {
 
+    $api->group([
+        'middleware' => 'api.throttle',
+        'limit' => 10,
+        'expires' => 1,
+    ], function ($api) {
+        // 短信验证码
+        $api->post('verificationCodes', 'VerificationCodesController@store')
+            ->name('api.verificationCodes.store');
+        // 用户注册
+        $api->post('users', 'UsersController@store')
+            ->name('api.users.store');
+        // 图片验证码
+        $api->post('captchas', 'CaptchasController@store')
+            ->name('api.captchas.store');
+    });
+});
