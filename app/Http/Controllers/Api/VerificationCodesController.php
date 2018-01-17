@@ -19,7 +19,7 @@ class VerificationCodesController extends Controller
         if (!hash_equals($captchaData['code'], $request->captcha_code)) {
             // 验证错误就清除缓存
             \Cache::forget($request->captcha_key);
-            return $this->response->error('验证码错误', 422);
+            return $this->response->errorUnauthorized('验证码错误');
         }
 
         $phone = $captchaData['phone'];

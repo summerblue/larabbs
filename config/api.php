@@ -241,8 +241,8 @@ return [
         ],
         // 登录相关，次数/分钟
         'sign' => [
-            'expires' => env('PUBLISH_RATE_LIMITS_EXPIRES', 1),
-            'limit'  => env('PUBLISH_RATE_LIMITS', 10),
+            'expires' => env('SIGN_RATE_LIMITS_EXPIRES', 1),
+            'limit'  => env('SIGN_RATE_LIMITS', 10),
         ],
     ],
 ];
