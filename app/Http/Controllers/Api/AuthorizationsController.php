@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use Auth;
 use App\Models\User;
 use Illuminate\Http\Request;
+use App\Transformers\DataTransformer;
 use App\Http\Requests\Api\AuthorizationRequest;
 use App\Http\Requests\Api\SocialAuthorizationRequest;
 
