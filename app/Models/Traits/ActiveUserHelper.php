@@ -64,7 +64,7 @@ trait ActiveUserHelper
             $user = $this->find($user_id);
 
             // 如果数据库里有该用户的话
-            if (count($user)) {
+            if ($user) {
 
                 // 将此用户实体放入集合的末尾
                 $active_users->push($user);
