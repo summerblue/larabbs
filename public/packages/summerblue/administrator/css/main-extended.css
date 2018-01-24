@@ -818,3 +818,6 @@ table.results .label {
 #settings_page form.settings_form {
     text-shadow: none;
 }
+#settings_page .plupload.html5 input {
+    height: auto!important;
+}
