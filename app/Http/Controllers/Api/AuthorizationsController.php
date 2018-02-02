@@ -88,7 +88,7 @@ class AuthorizationsController extends Controller
 
     public function destroy()
     {
-        Auth::logout();
+        Auth::guard('api')->logout();
         return $this->response->noContent();
     }
 
