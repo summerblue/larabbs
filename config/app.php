@@ -178,6 +178,7 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         App\Providers\EasySmsServiceProvicer::class,
+        App\Providers\JpushServiceProvicer::class,
 
     ],
 
