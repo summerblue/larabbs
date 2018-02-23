@@ -89,5 +89,8 @@ class Kernel extends HttpKernel
 
         // 访问节流，类似于 『1 分钟只能请求 10 次』的需求，一般在 API 中使用
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+
+        // 接口语言设置
+        'change-locale' => \App\Http\Middleware\ChangeLocale::class,
     ];
 }
