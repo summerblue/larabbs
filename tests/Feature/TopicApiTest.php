@@ -5,12 +5,13 @@ namespace Tests\Feature;
 use App\Models\User;
 use App\Models\Topic;
 use Tests\TestCase;
+use Tests\Traits\ActingJWTUser;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class TopicApiTest extends TestCase
 {
-    protected $token;
+    use ActingJWTUser;
 
     protected $user;
 
@@ -19,14 +20,14 @@ class TopicApiTest extends TestCase
         parent::setUp();
 
         $this->user = factory(User::class)->create();
-        $this->token = \Auth::guard('api')->fromUser($this->user);
     }
 
     public function testStoreTopic()
     {
         $data = ['category_id' => 1, 'body' => 'test body', 'title' => 'test title'];
 
-        $response = $this->request('POST', '/api/topics', $data);
+        $response = $this->JWTActingAs($this->user)
+            ->json('POST', '/api/topics', $data);
 
         $assertData = [
             'category_id' => 1,
@@ -45,7 +46,8 @@ class TopicApiTest extends TestCase
 
         $editData = ['category_id' => 2, 'body' => 'edit body', 'title' => 'edit title'];
 
-        $response = $this->request('PATCH', '/api/topics/'.$topic->id, $editData);
+        $response = $this->JWTActingAs($this->user)
+            ->json('PATCH', '/api/topics/'.$topic->id, $editData);
 
         $assertData= [
             'category_id' => 2,
@@ -61,7 +63,7 @@ class TopicApiTest extends TestCase
     public function testShowTopic()
     {
         $topic = $this->makeTopic();
-        $response = $this->request('GET', '/api/topics/'.$topic->id);
+        $response = $this->json('GET', '/api/topics/'.$topic->id);
 
         $assertData= [
             'category_id' => $topic->category_id,
@@ -76,7 +78,7 @@ class TopicApiTest extends TestCase
 
     public function testIndexTopic()
     {
-        $response = $this->request('GET', '/api/topics');
+        $response = $this->json('GET', '/api/topics');
 
         $response->assertStatus(200)
             ->assertJsonStructure(['data', 'meta']);
@@ -85,10 +87,11 @@ class TopicApiTest extends TestCase
     public function testDeleteTopic()
     {
         $topic = $this->makeTopic();
-        $response = $this->request('DELETE', '/api/topics/'.$topic->id);
+        $response = $this->JWTActingAs($this->user)
+            ->json('DELETE', '/api/topics/'.$topic->id);
         $response->assertStatus(204);
 
-        $response = $this->request('GET', '/api/topics/'.$topic->id);
+        $response = $this->json('GET', '/api/topics/'.$topic->id);
         $response->assertStatus(404);
     }
 
@@ -98,12 +101,5 @@ class TopicApiTest extends TestCase
             'user_id' => $this->user->id,
             'category_id' => 1,
         ]);
-    }
-
-    protected function request($method, $url, $data = [], $headers = [])
-    {
-        $headers['Authorization'] = 'Bearer '.$this->token;
-
-        return $this->json($method, $url, $data, $headers);
     }
 }
