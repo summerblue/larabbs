@@ -179,6 +179,7 @@ return [
 
         App\Providers\EasySmsServiceProvicer::class,
         App\Providers\JpushServiceProvicer::class,
+        Laravel\Passport\PassportServiceProvider::class,
 
     ],
 

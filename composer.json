@@ -16,6 +16,7 @@
         "jpush/jpush": "^3.5",
         "laravel/framework": "5.5.*",
         "laravel/horizon": "~1.0",
+        "laravel/passport": "~4.0",
         "laravel/tinker": "~1.0",
         "liyu/dingo-serializer-switch": "^0.3.0",
         "mews/captcha": "~2.0",
