@@ -22,6 +22,7 @@
         "mews/purifier": "~2.0",
         "overtrue/easy-sms": "^1.0",
         "overtrue/laravel-lang": "~3.0",
+        "overtrue/laravel-wechat": "~4.0",
         "overtrue/pinyin": "~3.0",
         "predis/predis": "~1.0",
         "socialiteproviders/weixin": "^4.0",
