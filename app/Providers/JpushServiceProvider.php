@@ -5,7 +5,7 @@ namespace App\Providers;
 use JPush\Client;
 use Illuminate\Support\ServiceProvider;
 
-class JpushServiceProvicer extends ServiceProvider
+class JpushServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
