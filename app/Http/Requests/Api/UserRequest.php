@@ -20,6 +20,7 @@ class UserRequest extends FormRequest
                     'verification_code' => 'required|string',
                 ];
                 break;
+            case 'PUT':
             case 'PATCH':
                 $userId = \Auth::guard('api')->id();
                 return [
@@ -37,6 +38,7 @@ class UserRequest extends FormRequest
         return [
             'verification_key' => '短信验证码 key',
             'verification_code' => '短信验证码',
+            'introduction' => '个人简介',
         ];
     }
 
