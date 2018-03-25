@@ -65,16 +65,16 @@
         },
         {
             "name": "caouecs/laravel-lang",
-            "version": "3.0.43",
+            "version": "3.0.45",
             "source": {
                 "type": "git",
                 "url": "https://github.com/caouecs/Laravel-lang.git",
-                "reference": "73087e07f164e2746bec1c9c116668d100e0af3b"
+                "reference": "614ba61b7f8d97255baf868aa6a44150a0f60e52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caouecs/Laravel-lang/zipball/73087e07f164e2746bec1c9c116668d100e0af3b",
-                "reference": "73087e07f164e2746bec1c9c116668d100e0af3b",
+                "url": "https://api.github.com/repos/caouecs/Laravel-lang/zipball/614ba61b7f8d97255baf868aa6a44150a0f60e52",
+                "reference": "614ba61b7f8d97255baf868aa6a44150a0f60e52",
                 "shasum": ""
             },
             "require-dev": {
@@ -103,20 +103,20 @@
                 "laravel",
                 "lpm"
             ],
-            "time": "2018-01-28T10:19:47+00:00"
+            "time": "2018-03-20T20:07:08+00:00"
         },
         {
             "name": "ckeditor/ckeditor",
-            "version": "4.8.0",
+            "version": "4.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ckeditor/ckeditor-releases.git",
-                "reference": "3e0ba2fa7361e0e425b73b2e4400af4a7f767ec5"
+                "reference": "a8497c4d9c8b8b559ac1e2fb99b397fd2167ae27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ckeditor/ckeditor-releases/zipball/3e0ba2fa7361e0e425b73b2e4400af4a7f767ec5",
-                "reference": "3e0ba2fa7361e0e425b73b2e4400af4a7f767ec5",
+                "url": "https://api.github.com/repos/ckeditor/ckeditor-releases/zipball/a8497c4d9c8b8b559ac1e2fb99b397fd2167ae27",
+                "reference": "a8497c4d9c8b8b559ac1e2fb99b397fd2167ae27",
                 "shasum": ""
             },
             "type": "library",
@@ -144,7 +144,7 @@
                 "text",
                 "wysiwyg"
             ],
-            "time": "2017-12-13T16:47:19+00:00"
+            "time": "2018-03-15T07:19:37+00:00"
         },
         {
             "name": "defuse/php-encryption",
@@ -914,19 +914,20 @@
         },
         {
             "name": "erusev/parsedown",
-            "version": "1.7.0",
+            "version": "1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown.git",
-                "reference": "6678d59be48c4be64eaca6ce70bea48a09488cc2"
+                "reference": "92e9c27ba0e74b8b028b111d1b6f956a15c01fc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown/zipball/6678d59be48c4be64eaca6ce70bea48a09488cc2",
-                "reference": "6678d59be48c4be64eaca6ce70bea48a09488cc2",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/92e9c27ba0e74b8b028b111d1b6f956a15c01fc1",
+                "reference": "92e9c27ba0e74b8b028b111d1b6f956a15c01fc1",
                 "shasum": ""
             },
             "require": {
+                "ext-mbstring": "*",
                 "php": ">=5.3.0"
             },
             "require-dev": {
@@ -955,20 +956,20 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2018-02-28T11:41:37+00:00"
+            "time": "2018-03-08T01:11:30+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
-            "version": "v4.9.3",
+            "version": "v4.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "95e1bae3182efc0f3422896a3236e991049dac69"
+                "reference": "d85d39da4576a6934b72480be6978fb10c860021"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/95e1bae3182efc0f3422896a3236e991049dac69",
-                "reference": "95e1bae3182efc0f3422896a3236e991049dac69",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/d85d39da4576a6934b72480be6978fb10c860021",
+                "reference": "d85d39da4576a6934b72480be6978fb10c860021",
                 "shasum": ""
             },
             "require": {
@@ -1002,7 +1003,7 @@
             "keywords": [
                 "html"
             ],
-            "time": "2017-06-03T02:28:16+00:00"
+            "time": "2018-02-23T01:58:20+00:00"
         },
         {
             "name": "fideloper/proxy",
@@ -1563,16 +1564,16 @@
         },
         {
             "name": "jpush/jpush",
-            "version": "v3.5.33",
+            "version": "v3.5.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jpush/jpush-api-php-client.git",
-                "reference": "fb9bae184895ce2d7f2a75678bebd4a2d6a14803"
+                "reference": "86ff095c1b8ec947ad1a13f40faeb67a191b8301"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jpush/jpush-api-php-client/zipball/fb9bae184895ce2d7f2a75678bebd4a2d6a14803",
-                "reference": "fb9bae184895ce2d7f2a75678bebd4a2d6a14803",
+                "url": "https://api.github.com/repos/jpush/jpush-api-php-client/zipball/86ff095c1b8ec947ad1a13f40faeb67a191b8301",
+                "reference": "86ff095c1b8ec947ad1a13f40faeb67a191b8301",
                 "shasum": ""
             },
             "require": {
@@ -1602,20 +1603,20 @@
             ],
             "description": "JPush API PHP Client",
             "homepage": "https://github.com/jpush/jpush-api-php-client",
-            "time": "2018-03-06T07:38:32+00:00"
+            "time": "2018-03-09T02:46:21+00:00"
         },
         {
             "name": "laravel/framework",
-            "version": "v5.5.36",
+            "version": "v5.5.39",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "9283cea4a5727aaf1def60a8fa820e49df2cf874"
+                "reference": "a21ef7e51df831a7c38d24dcf8c4774ee0847526"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/9283cea4a5727aaf1def60a8fa820e49df2cf874",
-                "reference": "9283cea4a5727aaf1def60a8fa820e49df2cf874",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/a21ef7e51df831a7c38d24dcf8c4774ee0847526",
+                "reference": "a21ef7e51df831a7c38d24dcf8c4774ee0847526",
                 "shasum": ""
             },
             "require": {
@@ -1626,7 +1627,7 @@
                 "league/flysystem": "~1.0",
                 "monolog/monolog": "~1.12",
                 "mtdowling/cron-expression": "~1.0",
-                "nesbot/carbon": "~1.20",
+                "nesbot/carbon": "^1.24.1",
                 "php": ">=7.0",
                 "psr/container": "~1.0",
                 "psr/simple-cache": "^1.0",
@@ -1736,20 +1737,20 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2018-03-01T13:59:00+00:00"
+            "time": "2018-03-09T17:24:53+00:00"
         },
         {
             "name": "laravel/horizon",
-            "version": "v1.2.2",
+            "version": "v1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/horizon.git",
-                "reference": "62c60efcb5bcff72562a0b918b18034f5f75fe55"
+                "reference": "36ef9e2d6e09e617cf801050326a69e876ff5535"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/horizon/zipball/62c60efcb5bcff72562a0b918b18034f5f75fe55",
-                "reference": "62c60efcb5bcff72562a0b918b18034f5f75fe55",
+                "url": "https://api.github.com/repos/laravel/horizon/zipball/36ef9e2d6e09e617cf801050326a69e876ff5535",
+                "reference": "36ef9e2d6e09e617cf801050326a69e876ff5535",
                 "shasum": ""
             },
             "require": {
@@ -1804,7 +1805,7 @@
                 "laravel",
                 "queue"
             ],
-            "time": "2018-02-12T18:32:04+00:00"
+            "time": "2018-03-13T18:00:18+00:00"
         },
         {
             "name": "laravel/passport",
@@ -1939,16 +1940,16 @@
         },
         {
             "name": "laravel/tinker",
-            "version": "v1.0.3",
+            "version": "v1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/tinker.git",
-                "reference": "852c2abe0b0991555a403f1c0583e64de6acb4a6"
+                "reference": "94f6daf2131508cebd11cd6f8632ba586d7ecc41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/tinker/zipball/852c2abe0b0991555a403f1c0583e64de6acb4a6",
-                "reference": "852c2abe0b0991555a403f1c0583e64de6acb4a6",
+                "url": "https://api.github.com/repos/laravel/tinker/zipball/94f6daf2131508cebd11cd6f8632ba586d7ecc41",
+                "reference": "94f6daf2131508cebd11cd6f8632ba586d7ecc41",
                 "shasum": ""
             },
             "require": {
@@ -1998,7 +1999,7 @@
                 "laravel",
                 "psysh"
             ],
-            "time": "2017-12-18T16:25:11+00:00"
+            "time": "2018-03-06T17:34:36+00:00"
         },
         {
             "name": "lcobucci/jwt",
@@ -2499,23 +2500,23 @@
         },
         {
             "name": "mews/purifier",
-            "version": "2.0.9",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mewebstudio/Purifier.git",
-                "reference": "85af9a2a932583b2c78a0ed762b46cb19399a0a9"
+                "reference": "7333435c9842e207f3381b7319b63122f8c9403e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mewebstudio/Purifier/zipball/85af9a2a932583b2c78a0ed762b46cb19399a0a9",
-                "reference": "85af9a2a932583b2c78a0ed762b46cb19399a0a9",
+                "url": "https://api.github.com/repos/mewebstudio/Purifier/zipball/7333435c9842e207f3381b7319b63122f8c9403e",
+                "reference": "7333435c9842e207f3381b7319b63122f8c9403e",
                 "shasum": ""
             },
             "require": {
-                "ezyang/htmlpurifier": "4.9.*",
-                "illuminate/config": "5.*",
-                "illuminate/filesystem": "5.*",
-                "illuminate/support": "5.*",
+                "ezyang/htmlpurifier": "4.10.*",
+                "illuminate/config": "5.0.* || 5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.*",
+                "illuminate/filesystem": "5.0.* || 5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.*",
+                "illuminate/support": "5.0.* || 5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.*",
                 "php": ">=5.5.9"
             },
             "require-dev": {
@@ -2570,7 +2571,7 @@
                 "security",
                 "xss"
             ],
-            "time": "2017-09-11T15:02:51+00:00"
+            "time": "2018-03-21T12:29:49+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -2759,20 +2760,20 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "1.23.0",
+            "version": "1.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "4a874a39b2b00d7e0146cd46fab6f47c41ce9e65"
+                "reference": "cbcf13da0b531767e39eb86e9687f5deba9857b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/4a874a39b2b00d7e0146cd46fab6f47c41ce9e65",
-                "reference": "4a874a39b2b00d7e0146cd46fab6f47c41ce9e65",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/cbcf13da0b531767e39eb86e9687f5deba9857b4",
+                "reference": "cbcf13da0b531767e39eb86e9687f5deba9857b4",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0",
+                "php": ">=5.3.9",
                 "symfony/translation": "~2.6 || ~3.0 || ~4.0"
             },
             "require-dev": {
@@ -2808,7 +2809,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2018-02-28T09:22:05+00:00"
+            "time": "2018-03-19T15:50:49+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -3772,16 +3773,16 @@
         },
         {
             "name": "spatie/laravel-permission",
-            "version": "2.9.1",
+            "version": "2.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-permission.git",
-                "reference": "8f5508a2e4cdc3e6657a31ac33d59bbda0cf5b10"
+                "reference": "9fdf2e850ff27b1ee9705c5f562d2411a7b5ce43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/8f5508a2e4cdc3e6657a31ac33d59bbda0cf5b10",
-                "reference": "8f5508a2e4cdc3e6657a31ac33d59bbda0cf5b10",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/9fdf2e850ff27b1ee9705c5f562d2411a7b5ce43",
+                "reference": "9fdf2e850ff27b1ee9705c5f562d2411a7b5ce43",
                 "shasum": ""
             },
             "require": {
@@ -3832,7 +3833,7 @@
                 "security",
                 "spatie"
             ],
-            "time": "2018-02-23T16:26:28+00:00"
+            "time": "2018-03-12T16:15:16+00:00"
         },
         {
             "name": "summerblue/administrator",
@@ -5249,16 +5250,16 @@
     "packages-dev": [
         {
             "name": "barryvdh/laravel-debugbar",
-            "version": "v3.1.3",
+            "version": "v3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "664fa434e26febf04d60df0368303cf0fe14f63a"
+                "reference": "7a91480cc6e597caed5117a3c5d685f06d35c5a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/664fa434e26febf04d60df0368303cf0fe14f63a",
-                "reference": "664fa434e26febf04d60df0368303cf0fe14f63a",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/7a91480cc6e597caed5117a3c5d685f06d35c5a1",
+                "reference": "7a91480cc6e597caed5117a3c5d685f06d35c5a1",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -5319,7 +5320,7 @@
                 "profiler",
                 "webprofiler"
             ],
-            "time": "2018-02-25T13:31:58+00:00"
+            "time": "2018-03-06T08:35:31+00:00"
         },
         {
             "name": "doctrine/instantiator",

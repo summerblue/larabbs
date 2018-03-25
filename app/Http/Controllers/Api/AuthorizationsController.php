@@ -76,7 +76,7 @@ class AuthorizationsController extends Controller
             break;
         }
 
-        $result = $this->getBearerTokenByUser($user, 1, false);
+        $result = $this->getBearerTokenByUser($user, '1', false);
         return $this->response->array($result)->setStatusCode(201);
     }
 
