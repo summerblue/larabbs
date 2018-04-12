@@ -29,7 +29,7 @@ class PushNotification implements ShouldQueue
      */
     public function handle(DatabaseNotification $notification)
     {
-        if (app()->environment('local')) {
+        if (!app()->environment('production')) {
             return;
         }
 
