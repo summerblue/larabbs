@@ -6,7 +6,7 @@
     "type": "project",
     "require": {
         "php": ">=7.0.0",
-        "dingo/api": "2.0.0-alpha1",
+        "dingo/api": "2.0.0-alpha2",
         "doctrine/dbal": "^2.6",
         "fideloper/proxy": "~3.3",
         "gregwar/captcha": "^1.1",
@@ -28,7 +28,7 @@
         "socialiteproviders/weixin": "^4.0",
         "spatie/laravel-permission": "~2.7",
         "summerblue/administrator": "~1.1",
-        "tymon/jwt-auth": "1.0.0-rc.1",
+        "tymon/jwt-auth": "1.0.0-rc.2",
         "viacreative/sudo-su": "~1.1"
     },
     "require-dev": {
