@@ -93,6 +93,8 @@ $api->version('v1', [
             // 编辑登录用户信息
             $api->patch('user', 'UsersController@update')
                 ->name('api.user.update');
+            $api->put('user', 'UsersController@update')
+                ->name('api.user.update');
             // 图片资源
             $api->post('images', 'ImagesController@store')
                 ->name('api.images.store');
