@@ -12,22 +12,22 @@ use App\Http\Requests\Api\WeappAuthorizationRequest;
 
 class AuthorizationsController extends Controller
 {
-    // public function store(AuthorizationRequest $request)
-    // {
-    //     $username = $request->username;
+    public function store(AuthorizationRequest $request)
+    {
+        $username = $request->username;
 
-    //     filter_var($username, FILTER_VALIDATE_EMAIL) ?
-    //         $credentials['email'] = $username :
-    //         $credentials['phone'] = $username;
+        filter_var($username, FILTER_VALIDATE_EMAIL) ?
+            $credentials['email'] = $username :
+            $credentials['phone'] = $username;
 
-    //     $credentials['password'] = $request->password;
+        $credentials['password'] = $request->password;
 
-    //     if (!$token = Auth::guard('api')->attempt($credentials)) {
-    //         return $this->response->errorUnauthorized(trans('auth.failed'));
-    //     }
+        if (!$token = Auth::guard('api')->attempt($credentials)) {
+            return $this->response->errorUnauthorized(trans('auth.failed'));
+        }
 
-    //     return $this->respondWithToken($token)->setStatusCode(201);
-    // }
+        return $this->respondWithToken($token)->setStatusCode(201);
+    }
     public function weappStore(WeappAuthorizationRequest $request)
     {
         $code = $request->code;
