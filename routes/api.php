@@ -66,6 +66,12 @@ $api->version('v1', [
         // 话题列表
         $api->get('topics', 'TopicsController@index')
             ->name('api.topics.index');
+            // 删除token
+        $api->delete('authorizations/current', 'AuthorizationsController@destroy')
+             ->name('api.authorizations.destroy');
+         // 用户详情
+        $api->get('users/{user}', 'UsersController@show')
+             ->name('api.users.show');
         // 话题详情
         $api->get('topics/{topic}', 'TopicsController@show')
             ->name('api.topics.show');

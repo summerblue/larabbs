@@ -110,6 +110,10 @@ class UsersController extends Controller
 
         return $this->response->item($user, new UserTransformer());
     }
+    public function show(User $user)
+    {
+        return $this->response->item($user, new UserTransformer());
+    }
 
     public function activedIndex(User $user)
     {
