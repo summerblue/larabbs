@@ -22,6 +22,7 @@
         "overtrue/laravel-lang": "~3.0",
         "overtrue/pinyin": "~3.0",
         "predis/predis": "~1.0",
+        "socialiteproviders/weixin": "^4.0",
         "spatie/laravel-permission": "~2.7",
         "summerblue/administrator": "~1.1",
         "viacreative/sudo-su": "~1.1"
