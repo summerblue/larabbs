@@ -16,6 +16,7 @@
         "laravel/framework": "5.5.*",
         "laravel/horizon": "~1.0",
         "laravel/tinker": "~1.0",
+        "liyu/dingo-serializer-switch": "^0.3.0",
         "mews/captcha": "~2.0",
         "mews/purifier": "~2.0",
         "overtrue/easy-sms": "^1.1",
