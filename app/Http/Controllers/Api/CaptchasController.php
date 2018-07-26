@@ -11,7 +11,7 @@ class CaptchasController extends Controller
     public function store(CaptchaRequest $request, CaptchaBuilder $captchaBuilder)
     {
         $key = 'captcha-'.str_random(15);
-        $phone = $request->phone;
+        $phone = ltrim(phone($request->phone, 'CN'), '+86');
 
         $captcha = $captchaBuilder->build();
         $expiredAt = now()->addMinutes(2);
