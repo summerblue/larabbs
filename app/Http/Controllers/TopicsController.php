@@ -21,9 +21,13 @@ class TopicsController extends Controller
 
 	public function index(Request $request, Topic $topic, User $user, Link $link)
     {
+        clock()->startEvent('topic-index', '请求话题数据');
+
         $topics = $topic->withOrder($request->order)->paginate(20);
         $active_users = $user->getActiveUsers();
         $links = $link->getAllCached();
+
+        clock()->endEvent('topic-index');
 
         return view('topics.index', compact('topics', 'active_users', 'links'));
     }
