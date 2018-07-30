@@ -2,8 +2,12 @@
 
 namespace App\Models;
 
+use EloquentFilter\Filterable;
+
 class Topic extends Model
 {
+    use Filterable;
+
     protected $fillable = ['title', 'body', 'category_id', 'excerpt', 'slug'];
 
     public function replies()

@@ -31,6 +31,7 @@
         "spatie/laravel-backup": "^5.9",
         "spatie/laravel-permission": "~2.7",
         "summerblue/administrator": "~1.1",
+        "tucker-eric/eloquentfilter": "^1.3",
         "tymon/jwt-auth": "1.0.0-rc.2",
         "viacreative/sudo-su": "~1.1",
         "vinkla/hashids": "~3.3"
