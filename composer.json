@@ -42,6 +42,7 @@
         "filp/whoops": "~2.0",
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
+        "orangehill/iseed": "^2.5",
         "overtrue/laravel-query-logger": "^1.0",
         "phpunit/phpunit": "~6.0",
         "summerblue/generator": "~0.5"
