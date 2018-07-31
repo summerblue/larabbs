@@ -7,9 +7,11 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Auth;
 use Spatie\Permission\Traits\HasRoles;
+use Watson\Rememberable\Rememberable;
 
 class User extends Authenticatable implements JWTSubject
 {
+    use Rememberable;
     use Traits\LastActivedAtHelper;
     use Traits\ActiveUserHelper;
     use Traits\HashIdHelper;
