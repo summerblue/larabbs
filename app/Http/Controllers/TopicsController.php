@@ -11,12 +11,35 @@ use Auth;
 use App\Handlers\ImageUploadHandler;
 use App\Models\User;
 use App\Models\Link;
+use PDF;
+use SnappyImage;
 
 class TopicsController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth', ['except' => ['index', 'show']]);
+        $this->middleware('auth', ['except' => ['index', 'show', 'pdf', 'image']]);
+    }
+
+    public function pdf(Topic $topic)
+    {
+        if (app()->isLocal()) {
+            config(['sudosu.enable' => false]);
+        }
+
+        return PDF::loadView('topics.show', compact('topic'))->inline('topics-'.$topic->id.'.pdf');
+    }
+
+    public function image(Topic $topic)
+    {
+        if (app()->isLocal()) {
+            config(['sudosu.enable' => false]);
+        }
+
+        return SnappyImage::loadView('topics.show', compact('topic'))
+            ->setOption('width', 595)
+            ->setOption('format', 'png')
+            ->inline('topics-'.$topic->id.'.png');
     }
 
 	public function index(Request $request, Topic $topic, User $user, Link $link)

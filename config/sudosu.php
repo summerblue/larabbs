@@ -1,6 +1,7 @@
 <?php
 
 return [
+	'enable' => env('SUDOSU_ENABLE', true),
 
     // 允许使用的顶级域名
     'allowed_tlds' => ['dev', 'local', 'app', 'test'],
