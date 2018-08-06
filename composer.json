@@ -6,6 +6,7 @@
     "type": "project",
     "require": {
         "php": ">=7.0.0",
+        "barryvdh/laravel-cors": "^0.11.0",
         "barryvdh/laravel-snappy": "^0.4.1",
         "chumper/zipper": "^1.0",
         "dingo/api": "2.0.0-alpha2",
