@@ -8,6 +8,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Auth;
 use Spatie\Permission\Traits\HasRoles;
 use Watson\Rememberable\Rememberable;
+use QrCode;
 
 class User extends Authenticatable implements JWTSubject
 {
@@ -113,5 +114,15 @@ class User extends Authenticatable implements JWTSubject
     public function getJWTCustomClaims()
     {
         return [];
+    }
+
+    public function qrcode()
+    {
+        return QrCode::format('png')
+            ->size(300)
+            ->margin(0)
+            ->errorCorrection('H')
+            ->merge($this->avatar, 0.3, true)
+            ->generate(route('users.show', $this));
     }
 }

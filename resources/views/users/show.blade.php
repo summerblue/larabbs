@@ -28,6 +28,22 @@
                 </div>
             </div>
         </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="media">
+                    <div align="center">
+                        <img class="thumbnail img-responsive" src="data:image/png;base64, {!! base64_encode($qrcode) !!}">
+                    </div>
+                </div>
+                <div class="media-body">
+                    <form method="POST" action="{{ route('users.qrcode', $user) }}">
+                        {{ csrf_field() }}
+                        <br>
+                        <button type="submit" class="btn btn-success btn-xs btn-block">下载</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
         <div class="panel panel-default">
