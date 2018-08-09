@@ -26,6 +26,7 @@
         "laravel/horizon": "~1.0",
         "laravel/tinker": "~1.0",
         "liyu/dingo-serializer-switch": "^0.3.0",
+        "maatwebsite/excel": "~2.1.0",
         "mews/captcha": "~2.0",
         "mews/purifier": "~2.0",
         "milon/barcode": "^5.3",

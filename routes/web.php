@@ -27,6 +27,12 @@ Route::resource('categories', 'CategoriesController', ['only' => ['show']]);
 
 Route::post('upload_image', 'TopicsController@uploadImage')->name('topics.upload_image');
 
+// 话题 excel
+Route::get('topics/excel', 'TopicsController@excel')->name('topics.excel');
+Route::post('topics/export', 'TopicsController@export')->name('topics.export');
+Route::post('topics/import', 'TopicsController@import')->name('topics.import');
+
+
 Route::get('topics/{topic}/image', 'TopicsController@image')->name('topics.image');
 Route::get('topics/{topic}/pdf', 'TopicsController@pdf')->name('topics.pdf');
 Route::get('topics/{topic}/{slug?}', 'TopicsController@show')->name('topics.show');
@@ -40,3 +46,4 @@ Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 Route::get('zip', 'ZipController@index')->name('zip.index');
 Route::post('zip/download', 'ZipController@download')->name('zip.download');
 Route::post('zip/upload', 'ZipController@upload')->name('zip.upload');
+
