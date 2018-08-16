@@ -38,6 +38,7 @@
         "predis/predis": "~1.0",
         "propaganistas/laravel-phone": "^4.0",
         "rap2hpoutre/laravel-log-viewer": "^0.19.1",
+        "roumen/sitemap": "~2.7.0",
         "simplesoftwareio/simple-qrcode": "^2.0",
         "socialiteproviders/weixin": "^4.0",
         "spatie/laravel-backup": "^5.9",
