@@ -7,7 +7,7 @@ use Watson\Rememberable\Rememberable;
 
 class Model extends EloquentModel
 {
-	use Rememberable;
+    use Rememberable;
 
     public function scopeRecent($query)
     {
@@ -17,6 +17,11 @@ class Model extends EloquentModel
     public function scopeOrdered($query)
     {
         return $query->orderBy('order', 'desc');
+    }
+
+    public function visits()
+    {
+        return visits($this);
     }
 
 }

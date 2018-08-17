@@ -37,6 +37,8 @@
                     ⋅
                     <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
                     {{ $topic->reply_count }}
+                    ⋅
+                    {{ $topic->visits()->count() }} 阅读
                 </div>
 
                 <div class="topic-body">

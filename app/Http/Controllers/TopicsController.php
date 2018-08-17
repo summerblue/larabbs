@@ -64,6 +64,16 @@ class TopicsController extends Controller
             return redirect($topic->link(), 301);
         }
 
+        $topic->visits()->increment();
+
+        logger('referer =====>');
+        logger($topic->visits()->refs());
+        logger('<====== referer');
+
+        logger('countries =====>');
+        logger($topic->visits()->countries());
+        logger('<====== countries');
+
         return view('topics.show', compact('topic'));
     }
 
