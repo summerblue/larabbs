@@ -16,7 +16,7 @@ class TopicsExport implements Responsable, FromQuery, WithMapping, WithHeadings,
 {
 	use Exportable;
 
-	private $fileName = 'tpoics.xlsx';
+	private $fileName = 'topics.xlsx';
 
     protected $days;
 
