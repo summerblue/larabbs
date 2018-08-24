@@ -3,10 +3,11 @@
 namespace App\Models;
 
 use EloquentFilter\Filterable;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Reply extends Model
 {
-    use Filterable;
+    use Filterable, SoftDeletes;
 
     protected $fillable = ['content'];
 

@@ -4,8 +4,57 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "662d0848a1d9b6fac97b8aaebd5a6031",
+    "content-hash": "1dd67295fc54fc0c104c0ec50a38470e",
     "packages": [
+        {
+            "name": "askedio/laravel-soft-cascade",
+            "version": "5.5.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Askedio/laravel-soft-cascade.git",
+                "reference": "c5dec6cc51cc4e7bcdd2d3cf5e65f0f3b2c29a55"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Askedio/laravel-soft-cascade/zipball/c5dec6cc51cc4e7bcdd2d3cf5e65f0f3b2c29a55",
+                "reference": "c5dec6cc51cc4e7bcdd2d3cf5e65f0f3b2c29a55",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "illuminate/container": "5.5.*",
+                "illuminate/database": "5.5.*",
+                "illuminate/events": "5.5.*",
+                "illuminate/support": "5.5.*",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "codacy/coverage": "dev-master",
+                "orchestra/testbench": "3.5.x",
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Askedio\\SoftCascade\\Providers\\GenericServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Askedio\\SoftCascade\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Laravel Cascade Soft Delete & Restore",
+            "time": "2018-04-28T10:29:02+00:00"
+        },
         {
             "name": "asm89/stack-cors",
             "version": "1.2.0",
