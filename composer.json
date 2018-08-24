@@ -10,6 +10,7 @@
         "awssat/laravel-visits": "^1.4",
         "barryvdh/laravel-cors": "^0.11.0",
         "barryvdh/laravel-snappy": "^0.4.1",
+        "beyondcode/laravel-self-diagnosis": "^1.0",
         "chumper/zipper": "^1.0",
         "dingo/api": "2.0.0-alpha2",
         "doctrine/dbal": "^2.6",
