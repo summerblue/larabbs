@@ -34,7 +34,9 @@ Route::post('topics/import', 'TopicsController@import')->name('topics.import');
 
 
 Route::get('topics/{topic}/image', 'TopicsController@image')->name('topics.image');
-Route::get('topics/{topic}/pdf', 'TopicsController@pdf')->name('topics.pdf');
+Route::get('topics/{topic}/pdf', 'TopicsController@pdf')->name('topics.pdf')->middleware('cacheResponse:60');
+
+
 Route::get('topics/{topic}/{slug?}', 'TopicsController@show')->name('topics.show');
 Route::resource('replies', 'RepliesController', ['only' => ['store', 'destroy']]);
 Route::resource('notifications', 'NotificationsController', ['only' => ['index']]);

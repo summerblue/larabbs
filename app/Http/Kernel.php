@@ -97,5 +97,8 @@ class Kernel extends HttpKernel
         'change-locale' => \App\Http\Middleware\ChangeLocale::class,
 
         'cors' => \Barryvdh\Cors\HandleCors::class,
+
+        // 需要缓存的路由
+        'cacheResponse' => \Spatie\ResponseCache\Middlewares\CacheResponse::class,
     ];
 }
