@@ -5,10 +5,18 @@ namespace App\Models;
 use EloquentFilter\Filterable;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Askedio\SoftCascade\Traits\SoftCascadeTrait;
+use Venturecraft\Revisionable\RevisionableTrait;
 
 class Topic extends Model
 {
-    use Filterable, SoftDeletes, SoftCascadeTrait;
+    use Filterable, SoftDeletes, SoftCascadeTrait, RevisionableTrait;
+
+    protected $revisionCreationsEnabled = true;
+
+    protected $historyLimit = 5;
+    protected $revisionCleanup = true;
+
+    protected $keepRevisionOf = ['title', 'category_id', 'deleted_at'];
 
     protected $softCascade = ['replies'];
 

@@ -51,6 +51,7 @@
         "torann/geoip": "^1.0",
         "tucker-eric/eloquentfilter": "^1.3",
         "tymon/jwt-auth": "1.0.0-rc.2",
+        "venturecraft/revisionable": "^1.28",
         "viacreative/sudo-su": "~1.1",
         "vinkla/hashids": "~3.3",
         "watson/rememberable": "^2.0"
