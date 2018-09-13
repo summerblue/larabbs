@@ -52,3 +52,26 @@ Route::post('zip/upload', 'ZipController@upload')->name('zip.upload');
 Route::get('sitemap', 'SitemapController@index')->name('sitemap.index');
 Route::get('sitemap/topics', 'SitemapController@topics')->name('sitemap.topics.index');
 Route::get('sitemap/users', 'SitemapController@users')->name('sitemap.users.index');
+
+
+
+Route::get('app', function() {
+	if (!Agent::isMobile()) {
+		return response('PC 访问');
+	}
+
+	if (Agent::isiOS()) {
+		if (str_contains(Agent::getUserAgent(), 'MicroMessenger')) {
+			return response('请使用 safari 打开下载');
+		}
+
+		return response('https://itunes.apple.com/xxxx');
+	}
+});
+
+
+
+
+
+
+

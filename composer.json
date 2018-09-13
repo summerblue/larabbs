@@ -23,6 +23,7 @@
         "hieu-le/active": "~3.5",
         "intervention/image": "^2.4",
         "itsgoingd/clockwork": "^2.2",
+        "jenssegers/agent": "^2.6",
         "jpush/jpush": "^3.5",
         "kalnoy/nestedset": "^4.3",
         "laravel/framework": "5.5.*",
