@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Roumen\Sitemap\Sitemap;
+use Laravelium\Sitemap\Sitemap;
 use App\Models\Topic;
 use App\Models\User;
 
