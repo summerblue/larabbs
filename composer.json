@@ -68,7 +68,8 @@
         "orangehill/iseed": "^2.5",
         "overtrue/laravel-query-logger": "^1.0",
         "phpunit/phpunit": "~7.0",
-        "summerblue/generator": "~0.5"
+        "summerblue/generator": "~0.5",
+        "xethron/migrations-generator": "^2.0"
     },
     "repositories": {
         "liyu": {
