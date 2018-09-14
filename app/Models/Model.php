@@ -14,11 +14,6 @@ class Model extends EloquentModel
         return $query->orderBy('id', 'desc');
     }
 
-    public function scopeOrdered($query)
-    {
-        return $query->orderBy('order', 'desc');
-    }
-
     public function visits()
     {
         return visits($this);

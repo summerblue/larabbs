@@ -56,6 +56,7 @@ Route::get('sitemap/users', 'SitemapController@users')->name('sitemap.users.inde
 
 
 Route::get('app', function() {
+    dump(123);
 	if (!Agent::isMobile()) {
 		return response('PC 访问');
 	}

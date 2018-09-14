@@ -3,9 +3,18 @@
 namespace App\Models;
 
 use Cache;
+use Spatie\EloquentSortable\Sortable;
+use Spatie\EloquentSortable\SortableTrait;
 
-class Link extends Model
+class Link extends Model implements Sortable
 {
+    use SortableTrait;
+
+    public $sortable = [
+        'order_column_name' => 'order',
+        'sort_when_creating' => true,
+    ];
+
     protected $fillable = ['title', 'link'];
 
     public $rememberCacheTag = 'larabbs_links';
@@ -13,6 +22,6 @@ class Link extends Model
 
     public function getAllCached()
     {
-        return $this->remember($this->cache_expire_in_minutes)->get();
+        return $this->remember($this->cache_expire_in_minutes)->ordered()->get();
     }
 }
