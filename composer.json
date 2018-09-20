@@ -46,6 +46,7 @@
         "simplesoftwareio/simple-qrcode": "^2.0",
         "socialiteproviders/weixin": "^4.0",
         "spatie/eloquent-sortable": "^3.4",
+        "spatie/laravel-activitylog": "^2.8",
         "spatie/laravel-backup": "^5.9",
         "spatie/laravel-permission": "~2.7",
         "spatie/laravel-responsecache": "^4.4",

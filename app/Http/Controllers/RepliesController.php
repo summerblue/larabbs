@@ -22,6 +22,8 @@ class RepliesController extends Controller
         $reply->topic_id = $request->topic_id;
         $reply->save();
 
+        activity('reply')->performedOn($reply)->log(':causer.name 添加了一条回复: :subject.content');
+
         return redirect()->to($reply->topic->link())->with('sucess', '回复创建成功！');
     }
 
@@ -29,6 +31,8 @@ class RepliesController extends Controller
     {
         $this->authorize('destroy', $reply);
         $reply->delete();
+
+        activity('reply')->performedOn($reply)->log(':causer.name 删除了一条回复: :subject.content');
 
         return redirect()->to($reply->topic->link())->with('success', '成功删除回复！');
     }
