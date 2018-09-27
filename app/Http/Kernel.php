@@ -61,6 +61,9 @@ class Kernel extends HttpKernel
             // 访问来源
             \Spatie\Referer\CaptureReferer::class,
 
+            // 切换语言
+            \App\Http\Middleware\ChangeLocale::class,
+
 
             \RenatoMarinho\LaravelPageSpeed\Middleware\InlineCss::class,
             \RenatoMarinho\LaravelPageSpeed\Middleware\ElideAttributes::class,

@@ -51,6 +51,7 @@
         "spatie/laravel-backup": "^5.9",
         "spatie/laravel-permission": "~2.7",
         "spatie/laravel-responsecache": "^4.4",
+        "spatie/laravel-translatable": "^2.2",
         "summerblue/administrator": "~1.1",
         "torann/geoip": "^1.0",
         "tucker-eric/eloquentfilter": "^1.3",
