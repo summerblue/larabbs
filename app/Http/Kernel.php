@@ -60,6 +60,15 @@ class Kernel extends HttpKernel
 
             // 访问来源
             \Spatie\Referer\CaptureReferer::class,
+
+
+            \RenatoMarinho\LaravelPageSpeed\Middleware\InlineCss::class,
+            \RenatoMarinho\LaravelPageSpeed\Middleware\ElideAttributes::class,
+            \RenatoMarinho\LaravelPageSpeed\Middleware\TrimUrls::class,
+            \RenatoMarinho\LaravelPageSpeed\Middleware\InsertDNSPrefetch::class,
+            \RenatoMarinho\LaravelPageSpeed\Middleware\RemoveComments::class,
+            \RenatoMarinho\LaravelPageSpeed\Middleware\RemoveQuotes::class,
+            \RenatoMarinho\LaravelPageSpeed\Middleware\CollapseWhitespace::class,
         ],
 
         // API 中间件组，应用于 routes/api.php 路由文件
