@@ -12,6 +12,7 @@
         "barryvdh/laravel-snappy": "^0.4.1",
         "beyondcode/laravel-self-diagnosis": "^1.0",
         "chumper/zipper": "^1.0",
+        "dimsav/laravel-translatable": "^8.0",
         "dingo/api": "2.0.0-alpha2",
         "doctrine/dbal": "^2.6",
         "fideloper/proxy": "~3.3",
