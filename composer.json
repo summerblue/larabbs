@@ -32,6 +32,7 @@
         "laravel/tinker": "~1.0",
         "laravelium/sitemap": "2.7.*",
         "liyu/dingo-serializer-switch": "^0.3.0",
+        "lubusin/laravel-decomposer": "^1.2",
         "maatwebsite/excel": "~3.0",
         "mews/captcha": "~2.0",
         "mews/purifier": "~2.0",

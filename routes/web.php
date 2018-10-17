@@ -57,22 +57,26 @@ Route::get('sitemap/users', 'SitemapController@users')->name('sitemap.users.inde
 
 Route::get('app', function() {
     dump(123);
-	if (!Agent::isMobile()) {
-		return response('PC 访问');
-	}
+    if (!Agent::isMobile()) {
+        return response('PC 访问');
+    }
 
-	if (Agent::isiOS()) {
-		if (str_contains(Agent::getUserAgent(), 'MicroMessenger')) {
-			return response('请使用 safari 打开下载');
-		}
+    if (Agent::isiOS()) {
+        if (str_contains(Agent::getUserAgent(), 'MicroMessenger')) {
+            return response('请使用 safari 打开下载');
+        }
 
-		return response('https://itunes.apple.com/xxxx');
-	}
+        return response('https://itunes.apple.com/xxxx');
+    }
 });
 
+Route::get('decompose','\Lubusin\Decomposer\Controllers\DecomposerController@index');
 
+Route::get('decompose/json', function() {
+    dd(Lubusin\Decomposer\Decomposer::getReportJson());
+});
 
-
-
-
+Route::get('decompose/array', function() {
+    dd(Lubusin\Decomposer\Decomposer::getReportArray());
+});
 
