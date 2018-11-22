@@ -22,7 +22,7 @@ class RepliesController extends Controller
         $reply->topic_id = $request->topic_id;
         $reply->save();
 
-        return redirect()->to($reply->topic->link())->with('sucess', '回复创建成功！');
+        return redirect()->to($reply->topic->link())->with('success', '回复创建成功！');
     }
 
     public function destroy(Reply $reply)
