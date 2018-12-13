@@ -8,13 +8,13 @@
         "php": ">=7.0.0",
         "dingo/api": "2.0.0-alpha2",
         "doctrine/dbal": "^2.6",
-        "fideloper/proxy": "~3.3",
         "gregwar/captcha": "^1.1",
+        "jpush/jpush": "^3.5",
+        "fideloper/proxy": "~4.0",
         "guzzlehttp/guzzle": "~6.3",
         "hieu-le/active": "~3.5",
         "intervention/image": "^2.4",
-        "jpush/jpush": "^3.5",
-        "laravel/framework": "5.5.*",
+        "laravel/framework": "5.7.*",
         "laravel/horizon": "~1.0",
         "laravel/tinker": "~1.0",
         "liyu/dingo-serializer-switch": "^0.3.0",
@@ -28,7 +28,7 @@
         "socialiteproviders/weixin": "^4.0",
         "spatie/laravel-permission": "~2.7",
         "summerblue/administrator": "~1.1",
-        "tymon/jwt-auth": "1.0.0-rc.2",
+        "tymon/jwt-auth": "1.0.0-rc.3",
         "viacreative/sudo-su": "~1.1"
     },
     "require-dev": {
@@ -37,14 +37,8 @@
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
         "overtrue/laravel-query-logger": "^1.0",
-        "phpunit/phpunit": "~6.0",
+        "phpunit/phpunit": "~7.0",
         "summerblue/generator": "~0.5"
-    },
-    "repositories": {
-        "liyu": {
-            "type": "path",
-            "url": "/Users/liyu/Code/php/dingo-serializer-switch"
-        }
     },
     "autoload": {
         "classmap": [

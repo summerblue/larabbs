@@ -30,7 +30,7 @@ class Kernel extends ConsoleKernel
         $schedule->command('larabbs:calculate-active-user')->hourly();
 
         // 每日零时执行一次
-        $schedule->command('larabbs:calculate-active-user')->dailyAt('00:00');
+        $schedule->command('larabbs:sync-user-actived-at')->dailyAt('00:00');
     }
 
     /**
