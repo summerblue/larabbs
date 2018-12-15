@@ -5,7 +5,7 @@
 * 项目代号：larabbs
 * 官方地址：https://laravel-china.org/topics/6592
 
-LaraBBS 是一个简洁的论坛应用，使用 Laravel5.5 编写而成。一步步开发此项目的教程请见 [《Web 开发实战进阶  - 从零开始构建论坛系统》](https://laravel-china.org/topics/6592)。
+LaraBBS 是一个简洁的论坛应用，使用 Laravel 编写而成。一步步开发此项目的教程请见 [《Web 开发实战进阶  - 从零开始构建论坛系统》](https://laravel-china.org/topics/6592)。
 
 ![](https://dn-phphub.qbox.me/uploads/images/201711/01/1/xcr6ijTArV.png)
 
@@ -26,14 +26,6 @@ LaraBBS 是一个简洁的论坛应用，使用 Laravel5.5 编写而成。一步
 - 自定义 Trait —— 活跃用户的业务逻辑实现；
 - 自定义中间件 —— 记录用户的最后登录时间；
 - XSS 安全防御；
-
-## 运行环境要求
-
-- Nginx 1.8+
-- PHP 7.1+
-- Mysql 5.7+
-- Redis 3.0+
-- Memcached 1.4+
 
 ## 开发环境部署/安装
 
