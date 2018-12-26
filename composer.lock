@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a8fec2c0dd1e91dffb49a073c032f0a0",
+    "content-hash": "29c16b28e1c3c8737a8703b92ed15add",
     "packages": [
         {
             "name": "cakephp/chronos",
@@ -117,6 +117,53 @@
                 "lpm"
             ],
             "time": "2018-11-22T19:30:58+00:00"
+        },
+        {
+            "name": "ckeditor/ckeditor",
+            "version": "4.11.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ckeditor/ckeditor-releases.git",
+                "reference": "70e6f8f01c3d7d8f713291984017a6005c4e737a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ckeditor/ckeditor-releases/zipball/70e6f8f01c3d7d8f713291984017a6005c4e737a",
+                "reference": "70e6f8f01c3d7d8f713291984017a6005c4e737a",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+",
+                "LGPL-2.1+",
+                "MPL-1.1+"
+            ],
+            "authors": [
+                {
+                    "name": "CKSource",
+                    "homepage": "http://cksource.com"
+                }
+            ],
+            "description": "JavaScript WYSIWYG web text editor.",
+            "homepage": "http://ckeditor.com",
+            "keywords": [
+                "CKEditor",
+                "editor",
+                "fckeditor",
+                "html",
+                "javascript",
+                "richtext",
+                "text",
+                "wysiwyg"
+            ],
+            "time": "2018-11-08T18:19:19+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2975,6 +3022,73 @@
                 "spatie"
             ],
             "time": "2018-12-16T00:49:22+00:00"
+        },
+        {
+            "name": "summerblue/administrator",
+            "version": "v1.1.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/summerblue/administrator.git",
+                "reference": "37c27b82cc9f09fdd1709d4e2335a936738a3ef8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/summerblue/administrator/zipball/37c27b82cc9f09fdd1709d4e2335a936738a3ef8",
+                "reference": "37c27b82cc9f09fdd1709d4e2335a936738a3ef8",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ckeditor/ckeditor": "4.*",
+                "laravel/framework": "5.5.* || 5.6.* || 5.7.*",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~5.7.12"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Frozennode\\Administrator\\AdministratorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/controllers"
+                ],
+                "psr-0": {
+                    "Frozennode\\Administrator": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Original: Jan Hartigan, modified by CJ",
+                    "email": "cj@estgroupe.com"
+                }
+            ],
+            "description": "A database interface package for Laravel, modified!",
+            "homepage": "https://github.com/summerblue/administrator",
+            "keywords": [
+                "admin",
+                "administrator",
+                "cms",
+                "database",
+                "laravel",
+                "laravel-administrator"
+            ],
+            "time": "2018-12-13T05:19:28+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
