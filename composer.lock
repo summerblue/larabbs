@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e9c43dd41c34998ffe67eb71e1e6581d",
+    "content-hash": "d5adfa7f63680b5292919b57ad0ca742",
     "packages": [
         {
             "name": "cakephp/chronos",
@@ -2217,19 +2217,20 @@
         },
         {
             "name": "liyu/dingo-serializer-switch",
-            "version": "v0.3.0",
+            "version": "v0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liyu001989/dingo-serializer-switch.git",
-                "reference": "82e23a7c9f46f7ec05ae9b5999c618f5c21a3290"
+                "reference": "90db0bff648cac0f0c44cca7f949783161a34c8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liyu001989/dingo-serializer-switch/zipball/82e23a7c9f46f7ec05ae9b5999c618f5c21a3290",
-                "reference": "82e23a7c9f46f7ec05ae9b5999c618f5c21a3290",
+                "url": "https://api.github.com/repos/liyu001989/dingo-serializer-switch/zipball/90db0bff648cac0f0c44cca7f949783161a34c8a",
+                "reference": "90db0bff648cac0f0c44cca7f949783161a34c8a",
                 "shasum": ""
             },
             "require": {
+                "dingo/api": "^2.0.0-alpha1",
                 "php": ">=7.0"
             },
             "type": "library",
@@ -2256,7 +2257,7 @@
                 }
             ],
             "description": "A middleware to switch dingo serializer",
-            "time": "2018-01-06T05:09:05+00:00"
+            "time": "2018-12-28T07:37:23+00:00"
         },
         {
             "name": "mews/captcha",
