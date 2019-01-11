@@ -16,6 +16,7 @@ use SnappyImage;
 use Excel;
 use App\Exports\TopicsExport;
 use App\Imports\TopicsImport;
+use App\ViewModels\TopicViewModel;
 
 class TopicsController extends Controller
 {
@@ -45,17 +46,10 @@ class TopicsController extends Controller
             ->inline('topics-'.$topic->id.'.png');
     }
 
-	public function index(Request $request, Topic $topic, User $user, Link $link)
+	public function index(Request $request)
     {
-        clock()->startEvent('topic-index', '请求话题数据');
-
-        $topics = $topic->withOrder($request->order)->paginate(20);
-        $active_users = $user->getActiveUsers();
-        $links = $link->getAllCached();
-
-        clock()->endEvent('topic-index');
-
-        return view('topics.index', compact('topics', 'active_users', 'links'));
+        $viewModel = new TopicViewModel($request->order);
+        return view('topics.index', $viewModel);
     }
 
     public function show(Request $request, Topic $topic)
