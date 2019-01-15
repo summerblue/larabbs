@@ -8,12 +8,12 @@
         "php": ">=7.0.0",
         "dingo/api": "2.0.0-alpha2",
         "doctrine/dbal": "^2.6",
-        "gregwar/captcha": "^1.1",
-        "jpush/jpush": "^3.5",
         "fideloper/proxy": "~4.0",
+        "gregwar/captcha": "^1.1",
         "guzzlehttp/guzzle": "~6.3",
         "hieu-le/active": "~3.5",
         "intervention/image": "^2.4",
+        "jpush/jpush": "^3.5",
         "laravel/framework": "5.7.*",
         "laravel/horizon": "~1.0",
         "laravel/tinker": "~1.0",
@@ -76,5 +76,7 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "optimize-autoloader": true
-    }
+    },
+ "   minimum-stability" : "dev",
+    "prefer-stable" : true
 }
