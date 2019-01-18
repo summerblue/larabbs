@@ -24,7 +24,7 @@ class RepliesController extends Controller
 
         activity('reply')->performedOn($reply)->log(':causer.name 添加了一条回复: :subject.content');
 
-        return redirect()->to($reply->topic->link())->with('sucess', '回复创建成功！');
+        return redirect()->to($reply->topic->link())->with('success', '回复创建成功！');
     }
 
     public function destroy(Reply $reply)
