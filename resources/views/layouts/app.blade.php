@@ -27,6 +27,9 @@
         <div class="container">
 
             @include('layouts._message')
+
+            {{ Breadcrumbs::render() }}
+
             @yield('content')
 
         </div>
