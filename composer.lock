@@ -153,16 +153,16 @@
         },
         {
             "name": "awssat/laravel-visits",
-            "version": "1.5.0",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/awssat/laravel-visits.git",
-                "reference": "8994c26af54f5acb82344941eb469e0659b1ad93"
+                "reference": "30162a6dd5bfbe8aaa5365189a04cbd3c46a79f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/awssat/laravel-visits/zipball/8994c26af54f5acb82344941eb469e0659b1ad93",
-                "reference": "8994c26af54f5acb82344941eb469e0659b1ad93",
+                "url": "https://api.github.com/repos/awssat/laravel-visits/zipball/30162a6dd5bfbe8aaa5365189a04cbd3c46a79f2",
+                "reference": "30162a6dd5bfbe8aaa5365189a04cbd3c46a79f2",
                 "shasum": ""
             },
             "require": {
@@ -224,7 +224,7 @@
                 "redis",
                 "visits"
             ],
-            "time": "2019-01-15T05:06:37+00:00"
+            "time": "2019-01-18T01:12:42+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -2706,16 +2706,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.77",
+            "version": "v1.2.78",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "28b16dd80c5a690dd8d05aa2602b16815f6eff6d"
+                "reference": "0f91f34d375ddd5d7034b9eaf6b74acd0b2a0ed6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/28b16dd80c5a690dd8d05aa2602b16815f6eff6d",
-                "reference": "28b16dd80c5a690dd8d05aa2602b16815f6eff6d",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/0f91f34d375ddd5d7034b9eaf6b74acd0b2a0ed6",
+                "reference": "0f91f34d375ddd5d7034b9eaf6b74acd0b2a0ed6",
                 "shasum": ""
             },
             "require": {
@@ -2751,7 +2751,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2019-01-12T17:16:15+00:00"
+            "time": "2019-01-15T21:21:27+00:00"
         },
         {
             "name": "jenssegers/agent",
@@ -2992,16 +2992,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.7.20",
+            "version": "v5.7.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "10cd20294b5668f90ba91996236834e71f7ff670"
+                "reference": "25f74458a242b61cc9e9c09d31f94fb13ed805f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/10cd20294b5668f90ba91996236834e71f7ff670",
-                "reference": "10cd20294b5668f90ba91996236834e71f7ff670",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/25f74458a242b61cc9e9c09d31f94fb13ed805f3",
+                "reference": "25f74458a242b61cc9e9c09d31f94fb13ed805f3",
                 "shasum": ""
             },
             "require": {
@@ -3134,7 +3134,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2019-01-08T14:39:11+00:00"
+            "time": "2019-01-15T15:20:32+00:00"
         },
         {
             "name": "laravel/horizon",
@@ -6583,16 +6583,16 @@
         },
         {
             "name": "socialiteproviders/manager",
-            "version": "v3.3.3",
+            "version": "v3.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SocialiteProviders/Manager.git",
-                "reference": "f87057486472e35cf0a208c870f613289806ade1"
+                "reference": "58b72a667da292a1d0a0b1e6e9aeda4053617030"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SocialiteProviders/Manager/zipball/f87057486472e35cf0a208c870f613289806ade1",
-                "reference": "f87057486472e35cf0a208c870f613289806ade1",
+                "url": "https://api.github.com/repos/SocialiteProviders/Manager/zipball/58b72a667da292a1d0a0b1e6e9aeda4053617030",
+                "reference": "58b72a667da292a1d0a0b1e6e9aeda4053617030",
                 "shasum": ""
             },
             "require": {
@@ -6624,10 +6624,14 @@
                 {
                     "name": "Andy Wendt",
                     "email": "andy@awendt.com"
+                },
+                {
+                    "name": "Anton Komarev",
+                    "email": "a.komarev@cybercog.su"
                 }
             ],
             "description": "Easily add new or override built-in providers in Laravel Socialite.",
-            "time": "2019-01-11T20:44:14+00:00"
+            "time": "2019-01-16T07:58:54+00:00"
         },
         {
             "name": "socialiteproviders/weixin",
@@ -10526,16 +10530,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.5.1",
+            "version": "7.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "c23d78776ad415d5506e0679723cb461d71f488f"
+                "reference": "7c89093bd00f7d5ddf0ab81dee04f801416b4944"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c23d78776ad415d5506e0679723cb461d71f488f",
-                "reference": "c23d78776ad415d5506e0679723cb461d71f488f",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7c89093bd00f7d5ddf0ab81dee04f801416b4944",
+                "reference": "7c89093bd00f7d5ddf0ab81dee04f801416b4944",
                 "shasum": ""
             },
             "require": {
@@ -10606,7 +10610,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-12-12T07:20:32+00:00"
+            "time": "2019-01-15T08:19:08+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
