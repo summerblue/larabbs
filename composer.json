@@ -6,7 +6,7 @@
     "type": "project",
     "require": {
         "php": ">=7.0.0",
-        "dingo/api": "^2.2",
+        "dingo/api": "2.0.0-beta1",
         "doctrine/dbal": "^2.6",
         "fideloper/proxy": "~4.0",
         "gregwar/captcha": "^1.1",
