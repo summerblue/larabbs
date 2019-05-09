@@ -12,6 +12,7 @@
         "dingo/api": "^2.2",
         "doctrine/dbal": "^2.9",
         "fideloper/proxy": "^4.0",
+        "gregwar/captcha": "^1.1",
         "guzzlehttp/guzzle": "~6.3",
         "hieu-le/active": "~3.5",
         "intervention/image": "^2.4",
