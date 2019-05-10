@@ -28,6 +28,7 @@
         "socialiteproviders/weixin": "^4.0",
         "spatie/laravel-permission": "~2.29",
         "summerblue/administrator": "~1.1",
+        "tymon/jwt-auth": "1.0.0-rc.4.1",
         "viacreative/sudo-su": "~1.1"
     },
     "require-dev": {
