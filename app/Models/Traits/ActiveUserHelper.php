@@ -7,6 +7,7 @@ use App\Models\Reply;
 use Carbon\Carbon;
 use Cache;
 use DB;
+use Arr;
 
 trait ActiveUserHelper
 {
@@ -21,13 +22,13 @@ trait ActiveUserHelper
 
     // 缓存相关配置
     protected $cache_key = 'larabbs_active_users';
-    protected $cache_expire_in_minutes = 65;
+    protected $cache_expire_in_seconds = 65 * 60;
 
     public function getActiveUsers()
     {
         // 尝试从缓存中取出 cache_key 对应的数据。如果能取到，便直接返回数据。
         // 否则运行匿名函数中的代码来取出活跃用户数据，返回的同时做了缓存。
-        return Cache::remember($this->cache_key, $this->cache_expire_in_minutes, function(){
+        return Cache::remember($this->cache_key, $this->cache_expire_in_seconds, function(){
             return $this->calculateActiveUsers();
         });
     }
@@ -46,7 +47,7 @@ trait ActiveUserHelper
         $this->calculateReplyScore();
 
         // 数组按照得分排序
-        $users = array_sort($this->users, function ($user) {
+        $users = Arr::sort($this->users, function ($user) {
             return $user['score'];
         });
 
@@ -111,6 +112,6 @@ trait ActiveUserHelper
     private function cacheActiveUsers($active_users)
     {
         // 将数据放入缓存中
-        Cache::put($this->cache_key, $active_users, $this->cache_expire_in_minutes);
+        Cache::put($this->cache_key, $active_users, $this->cache_expire_in_seconds);
     }
 }
