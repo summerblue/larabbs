@@ -18,7 +18,7 @@ class RepliesController extends Controller
 		$replies = $topic->replies()->paginate(20);
 
         if ($request->include) {
-            $replies->load($request->include);
+            $replies->load(explode(',', $request->include));
         }
 
 		return $this->response->paginator($replies, new ReplyTransformer());
@@ -31,7 +31,7 @@ class RepliesController extends Controller
         $replies = $user->replies()->paginate(20);
 
         if ($request->include) {
-            $replies->load($request->include);
+            $replies->load(explode(',', $request->include));
         }
 
 		return $this->response->paginator($replies, new ReplyTransformer());
