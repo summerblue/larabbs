@@ -20,6 +20,7 @@
         "laravel/framework": "5.8.*",
         "laravel/horizon": "~3.1",
         "laravel/tinker": "^1.0",
+        "liyu/dingo-serializer-switch": "^0.3.1",
         "mews/captcha": "~2.0",
         "mews/purifier": "~2.0",
         "overtrue/easy-sms": "^1.1",
