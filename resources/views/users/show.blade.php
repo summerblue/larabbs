@@ -10,11 +10,11 @@
     <div class="card ">
       <img class="card-img-top" src="https://cdn.learnku.com/uploads/images/201709/20/1/PtDKbASVcz.png?imageView2/1/w/600/h/600" alt="{{ $user->name }}">
       <div class="card-body">
-            <h5><strong>个人简介</strong></h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-            <hr>
-            <h5><strong>注册于</strong></h5>
-            <p>January 01 1901</p>
+        <h5><strong>个人简介</strong></h5>
+        <p>{{ $user->introduction }}</p>
+        <hr>
+        <h5><strong>注册于</strong></h5>
+        <p>{{ $user->created_at->diffForHumans() }}</p>
       </div>
     </div>
   </div>
