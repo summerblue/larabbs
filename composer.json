@@ -20,6 +20,7 @@
         "overtrue/laravel-lang": "~3.0",
         "overtrue/pinyin": "~4.0",
         "predis/predis": "~1.1",
+        "spatie/laravel-permission": "~3.0",
         "summerblue/laravel-active": "6.*"
     },
     "require-dev": {
