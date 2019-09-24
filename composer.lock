@@ -2619,16 +2619,16 @@
         },
         {
             "name": "summerblue/administrator",
-            "version": "6.0.0",
+            "version": "6.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/summerblue/administrator.git",
-                "reference": "7cee7cf52709187bece3ee4988358434b45b45b1"
+                "reference": "c82715c9e0f26973c7fba00ad1dcf3a56eaf5368"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/summerblue/administrator/zipball/7cee7cf52709187bece3ee4988358434b45b45b1",
-                "reference": "7cee7cf52709187bece3ee4988358434b45b45b1",
+                "url": "https://api.github.com/repos/summerblue/administrator/zipball/c82715c9e0f26973c7fba00ad1dcf3a56eaf5368",
+                "reference": "c82715c9e0f26973c7fba00ad1dcf3a56eaf5368",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2682,7 +2682,7 @@
                 "laravel",
                 "laravel-administrator"
             ],
-            "time": "2019-09-20T02:30:10+00:00"
+            "time": "2019-09-20T03:49:58+00:00"
         },
         {
             "name": "summerblue/laravel-active",
