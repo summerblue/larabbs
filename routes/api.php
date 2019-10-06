@@ -19,7 +19,7 @@ Route::prefix('v1')->namespace('Api')
                    ->group(function () {
     // 图片验证码
     Route::post('captchas', 'CaptchasController@store')
-		->name('api.captchas.store');
+		->name('captchas.store');
     // 短信验证码
     Route::post('verificationCodes', 'VerificationCodesController@store')
         ->name('verificationCodes.store');
@@ -29,5 +29,14 @@ Route::prefix('v1')->namespace('Api')
     // 第三方登录
     Route::post('socials/{social_type}/authorizations', 'AuthorizationsController@socialStore')
         ->where('social_type', 'weixin')
-		->name('api.socials.authorizations.store');
+		->name('socials.authorizations.store');
+    // 登录
+    Route::post('authorizations', 'AuthorizationsController@store')
+		->name('authorizations.store');
+    // 刷新token
+	Route::put('authorizations/current', 'AuthorizationsController@update')
+		->name('authorizations.update');
+	// 删除token
+	Route::delete('authorizations/current', 'AuthorizationsController@destroy')
+		->name('authorizations.destroy');
 });
