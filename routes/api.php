@@ -66,6 +66,10 @@ Route::prefix('v1')
                     // 上传图片
                     Route::post('images', 'ImagesController@store')
                         ->name('images.store');
+                    // 发布话题
+                    Route::resource('topics', 'TopicsController')->except([
+                        'create', 'edit'
+                    ]);
                 });
             });
     });
