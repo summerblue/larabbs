@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bb4f1ea186e654168fcb762533e00291",
+    "content-hash": "802e3226ea100570a692eb630079cb4d",
     "packages": [
         {
             "name": "cakephp/chronos",
@@ -3047,6 +3047,64 @@
             "time": "2019-09-02T14:57:53+00:00"
         },
         {
+            "name": "spatie/laravel-query-builder",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-query-builder.git",
+                "reference": "e66471c34b28a9511bb545d8c8ec0164b2913301"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-query-builder/zipball/e66471c34b28a9511bb545d8c8ec0164b2913301",
+                "reference": "e66471c34b28a9511bb545d8c8ec0164b2913301",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "~5.6.34|~5.7.0|~5.8.0|^6.0",
+                "illuminate/http": "~5.6.34|~5.7.0|~5.8.0|^6.0",
+                "illuminate/support": "~5.6.34|~5.7.0|~5.8.0|^6.0",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "ext-json": "*",
+                "orchestra/testbench": "~3.6.0|~3.7.0|~3.8.0|^4.0",
+                "phpunit/phpunit": "^7.0|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\QueryBuilder\\QueryBuilderServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\QueryBuilder\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Vanderbist",
+                    "email": "alex@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily build Eloquent queries from API requests",
+            "homepage": "https://github.com/spatie/laravel-query-builder",
+            "keywords": [
+                "laravel-query-builder",
+                "spatie"
+            ],
+            "time": "2019-10-08T08:48:28+00:00"
+        },
+        {
             "name": "summerblue/administrator",
             "version": "6.0.2",
             "source": {
@@ -5614,6 +5672,49 @@
                 "symfony"
             ],
             "time": "2019-03-07T21:35:13+00:00"
+        },
+        {
+            "name": "overtrue/laravel-query-logger",
+            "version": "1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/overtrue/laravel-query-logger.git",
+                "reference": "590e0f0aee978532d86cea96c1c0e39c6b1046bc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/overtrue/laravel-query-logger/zipball/590e0f0aee978532d86cea96c1c0e39c6b1046bc",
+                "reference": "590e0f0aee978532d86cea96c1c0e39c6b1046bc",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "~5.5||~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Overtrue\\LaravelQueryLogger\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Overtrue\\LaravelQueryLogger\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "overtrue",
+                    "email": "anzhengchao@gmail.com"
+                }
+            ],
+            "description": "A dev tool to log all queries for laravel application.",
+            "time": "2019-09-04T13:15:02+00:00"
         },
         {
             "name": "phar-io/manifest",

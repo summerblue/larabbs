@@ -25,6 +25,7 @@
         "predis/predis": "~1.1",
         "socialiteproviders/weixin": "^4.0",
         "spatie/laravel-permission": "~3.0",
+        "spatie/laravel-query-builder": "^2.3",
         "summerblue/administrator": "6.*",
         "summerblue/laravel-active": "6.*",
         "tymon/jwt-auth": "1.0.0-rc.5",
@@ -37,6 +38,7 @@
         "laravel/ui": "^1.0",
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^3.0",
+        "overtrue/laravel-query-logger": "^1.0",
         "phpunit/phpunit": "^8.0",
         "summerblue/generator": "6.*"
     },
