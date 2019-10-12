@@ -4,6 +4,8 @@ namespace App\Models;
 
 class Topic extends Model
 {
+    use Traits\QueryBuilderBindable;
+
     protected $fillable = [
         'title', 'body', 'category_id', 'excerpt', 'slug'
     ];
@@ -27,13 +29,13 @@ class Topic extends Model
     {
         // 不同的排序，使用不同的数据读取逻辑
         switch ($order) {
-            case 'recent':
-                $query->recent();
-                break;
+        case 'recent':
+            $query->recent();
+            break;
 
-            default:
-                $query->recentReplied();
-                break;
+        default:
+            $query->recentReplied();
+            break;
         }
     }
 
