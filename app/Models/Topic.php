@@ -4,8 +4,6 @@ namespace App\Models;
 
 class Topic extends Model
 {
-    use Traits\QueryBuilderBindable;
-
     protected $fillable = [
         'title', 'body', 'category_id', 'excerpt', 'slug'
     ];

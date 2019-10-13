@@ -25,8 +25,9 @@ class TopicsController extends Controller
         return TopicResource::collection($topics);
     }
 
-    public function show(Topic $topic)
+    public function show($topicId, TopicQuery $query)
     {
+        $topic = $query->findOrFail($topicId);
         return new TopicResource($topic);
     }
 
