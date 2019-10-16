@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Models\User;
 use Illuminate\Support\Arr;
 use Illuminate\Http\Request;
+use App\Traits\PassportToken;
 use Illuminate\Auth\AuthenticationException;
 use Psr\Http\Message\ServerRequestInterface;
 use Zend\Diactoros\Response as Psr7Response;
@@ -15,6 +16,8 @@ use League\OAuth2\Server\Exception\OAuthServerException;
 
 class AuthorizationsController extends Controller
 {
+    use PassportToken;
+
     public function store(AuthorizationRequest $originRequest, AuthorizationServer $server, ServerRequestInterface $serverRequest)
     {
         try {
@@ -28,6 +31,7 @@ class AuthorizationsController extends Controller
     {
         $driver = \Socialite::driver($type);
 
+        $user = User::first();
         try {
             if ($code = $request->code) {
                 $response = $driver->getAccessTokenResponse($code);
@@ -68,9 +72,9 @@ class AuthorizationsController extends Controller
             break;
         }
 
-        $token= auth('api')->login($user);
+        $result = $this->getBearerTokenByUser($user, '1', false);
 
-        return $this->respondWithToken($token)->setStatusCode(201);
+        return response()->json($result)->setStatusCode(201);
     }
 
     public function update(AuthorizationServer $server, ServerRequestInterface $serverRequest)
