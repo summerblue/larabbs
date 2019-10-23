@@ -22,8 +22,9 @@ class TopicsController extends Controller
     public function index(Request $request, Topic $topic, User $user, Link $link)
     {
         $topics = $topic->withOrder($request->order)
-                        ->with('user', 'category')
+                        ->with('user', 'category')  // 预加载防止 N+1 问题
                         ->paginate(20);
+
         $active_users = $user->getActiveUsers();
         $links = $link->getAllCached();
 
