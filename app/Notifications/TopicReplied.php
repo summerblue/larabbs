@@ -2,11 +2,14 @@
 
 namespace App\Notifications;
 
+use App\Models\Reply;
+use JPush\PushPayload;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use App\Notifications\Channels\JPushChannel;
 use Illuminate\Notifications\Messages\MailMessage;
-use App\Models\Reply;
+
 
 class TopicReplied extends Notification
 {
@@ -23,7 +26,7 @@ class TopicReplied extends Notification
     public function via($notifiable)
     {
         // 开启通知的频道
-        return ['database'];
+        return ['database', JPushChannel::class];
     }
 
     public function toDatabase($notifiable)
@@ -42,5 +45,13 @@ class TopicReplied extends Notification
             'topic_id' => $topic->id,
             'topic_title' => $topic->title,
         ];
+    }
+
+    public function toJPush($notifiable, PushPayload $payload): PushPayload
+    {
+        return $payload
+            ->setPlatform('all')
+            ->addRegistrationId($notifiable->registration_id)
+            ->setNotificationAlert(strip_tags($this->reply->content));
     }
 }
