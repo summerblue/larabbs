@@ -37,6 +37,9 @@ Route::prefix('v1')
                 // 登录
                 Route::post('authorizations', 'AuthorizationsController@store')
                     ->name('authorizations.store');
+                // 小程序登录
+                Route::post('weapp/authorizations', 'AuthorizationsController@weappStore')
+                    ->name('weapp.authorizations.store');
                 // 刷新token
                 Route::put('authorizations/current', 'AuthorizationsController@update')
                     ->name('authorizations.update');
