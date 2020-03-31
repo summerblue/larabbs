@@ -139,7 +139,10 @@ class AuthorizationsController extends Controller
 
     public function destroy()
     {
-        auth('api')->logout();
+        try {
+            auth('api')->logout();
+        } catch(\Exception $e) {
+        }
         return response(null, 204);
     }
 
