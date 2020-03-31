@@ -22,6 +22,7 @@ class UserRequest extends FormRequest
             ];
             break;
         case 'PATCH':
+        case 'PUT':
             $userId = auth('api')->id();
 
             return [
