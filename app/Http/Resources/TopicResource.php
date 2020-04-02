@@ -17,6 +17,7 @@ class TopicResource extends JsonResource
         $data = parent::toArray($request);
         $data['user'] = new UserResource($this->whenLoaded('user'));
         $data['category'] = new CategoryResource($this->whenLoaded('category'));
+        $data['top_replies'] = ReplyResource::collection($this->whenLoaded('topReplies'));
 
         return $data;
     }

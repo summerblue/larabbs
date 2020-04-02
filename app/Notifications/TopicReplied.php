@@ -26,7 +26,8 @@ class TopicReplied extends Notification
     public function via($notifiable)
     {
         // 开启通知的频道
-        return ['database', JPushChannel::class];
+        return ['database'];
+        //return ['database', JPushChannel::class];
     }
 
     public function toDatabase($notifiable)
