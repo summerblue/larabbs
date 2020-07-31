@@ -11,13 +11,14 @@
         "php": "^7.2.5",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",
-        "guzzlehttp/guzzle": "^6.3",
+        "guzzlehttp/guzzle": "~6.3",
         "intervention/image": "^2.5",
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0",
         "mews/captcha": "~3.0",
         "mews/purifier": "~3.0",
         "overtrue/laravel-lang": "~3.0",
+        "overtrue/pinyin": "~4.0",
         "summerblue/laravel-active": "7.*"
     },
     "require-dev": {
