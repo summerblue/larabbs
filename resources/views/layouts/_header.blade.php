@@ -18,9 +18,9 @@
           <li class="nav-item {{ category_nav_active(4) }}"><a class="nav-link" href="{{ route('categories.show', 4) }}">公告</a></li>
         </ul>
 
-      <!-- Right Side Of Navbar -->
-      <ul class="navbar-nav navbar-right">
-          <!-- Authentication Links -->
+        <!-- Right Side Of Navbar -->
+        <ul class="navbar-nav navbar-right">
+            <!-- Authentication Links -->
           @guest
             <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">登录</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">注册</a></li>
@@ -28,6 +28,11 @@
             <li class="nav-item">
               <a class="nav-link mt-1 mr-3 font-weight-bold" href="{{ route('topics.create') }}">
                 <i class="fa fa-plus"></i>
+              </a>
+            </li>
+            <li class="nav-item notification-badge">
+              <a class="nav-link mr-3 badge badge-pill badge-{{ Auth::user()->notification_count > 0 ? 'hint' : 'secondary' }} text-white" href="{{ route('notifications.index') }}">
+                {{ Auth::user()->notification_count }}
               </a>
             </li>
             <li class="nav-item dropdown">
