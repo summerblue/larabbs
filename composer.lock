@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d6a09dc9647a7efa36ad82ab7aec9672",
+    "content-hash": "acbd281609abd64c9404dc2372ca34a4",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2231,6 +2231,52 @@
             "time": "2020-03-06T02:39:28+00:00"
         },
         {
+            "name": "overtrue/laravel-socialite",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/overtrue/laravel-socialite.git",
+                "reference": "dd24ad6ae71cd5f5f5a52bba72930c26e9d6de6a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/overtrue/laravel-socialite/zipball/dd24ad6ae71cd5f5f5a52bba72930c26e9d6de6a",
+                "reference": "dd24ad6ae71cd5f5f5a52bba72930c26e9d6de6a",
+                "shasum": ""
+            },
+            "require": {
+                "overtrue/socialite": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Overtrue\\LaravelSocialite\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "Socialite": "Overtrue\\LaravelSocialite\\Socialite"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Overtrue\\LaravelSocialite\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "overtrue",
+                    "email": "anzhengchao@gmail.com"
+                }
+            ],
+            "description": "Social OAuth authentication for Laravel 5.",
+            "time": "2017-12-14T05:34:22+00:00"
+        },
+        {
             "name": "overtrue/pinyin",
             "version": "4.0.6",
             "source": {
@@ -2292,6 +2338,66 @@
                 "cn2pinyin"
             ],
             "time": "2020-04-13T08:53:30+00:00"
+        },
+        {
+            "name": "overtrue/socialite",
+            "version": "2.0.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/overtrue/socialite.git",
+                "reference": "bbcd8ffd2e1f3aa7c4d5298c56c6d73803aa3067"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/overtrue/socialite/zipball/bbcd8ffd2e1f3aa7c4d5298c56c6d73803aa3067",
+                "reference": "bbcd8ffd2e1f3aa7c4d5298c56c6d73803aa3067",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "guzzlehttp/guzzle": "~5.0|~6.0",
+                "php": ">=7.0",
+                "symfony/http-foundation": "^2.7|^3.0|^4.0|^5.0"
+            },
+            "conflict": {
+                "socialiteproviders/weixin": "*"
+            },
+            "require-dev": {
+                "mockery/mockery": "~1.2",
+                "phpunit/phpunit": "~6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Overtrue\\Socialite\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "overtrue",
+                    "email": "anzhengchao@gmail.com"
+                }
+            ],
+            "description": "A collection of OAuth 2 packages that extracts from laravel/socialite.",
+            "keywords": [
+                "login",
+                "oauth",
+                "qq",
+                "social",
+                "wechat",
+                "weibo"
+            ],
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/overtrue",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2020-03-04T15:22:25+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -7458,5 +7564,6 @@
     "platform": {
         "php": "^7.2.5"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
