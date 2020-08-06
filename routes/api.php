@@ -29,6 +29,13 @@ Route::prefix('v1')
                 // 用户注册
                 Route::post('users', 'UsersController@store')
                     ->name('users.store');
+                // 用户注册
+                Route::post('users', 'UsersController@store')
+                    ->name('users.store');
+                // 第三方登录
+                Route::post('socials/{social_type}/authorizations', 'AuthorizationsController@socialStore')
+                    ->where('social_type', 'wechat')
+                    ->name('socials.authorizations.store');
             });
 
         Route::middleware('throttle:' . config('api.rate_limits.access'))
