@@ -15,6 +15,7 @@
         "gregwar/captcha": "^1.1",
         "guzzlehttp/guzzle": "~6.3",
         "intervention/image": "^2.5",
+        "jpush/jpush": "^3.6",
         "laravel/framework": "^7.0",
         "laravel/horizon": "~4.3",
         "laravel/tinker": "^2.0",
