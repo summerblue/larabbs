@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Traits\PassportToken;
 use App\Models\User;
 use Illuminate\Support\Arr;
 use Illuminate\Http\Request;
@@ -16,6 +17,7 @@ use League\OAuth2\Server\Exception\OAuthServerException;
 
 class AuthorizationsController extends Controller
 {
+    use PassportToken;
 
     public function store(AuthorizationRequest $originRequest, AuthorizationServer $server, ServerRequestInterface $serverRequest)
     {
@@ -70,8 +72,8 @@ class AuthorizationsController extends Controller
 
                 break;
         }
-
-        return $this->respondWithToken($token)->setStatusCode(201);
+        $result = $this->getBearerTokenByUser($user, '1', false);
+        return response()->json($result)->setStatusCode(201);
     }
 
     public function update(AuthorizationServer $server, ServerRequestInterface $serverRequest)
