@@ -18,6 +18,7 @@
         "jpush/jpush": "^3.6",
         "laravel/framework": "^7.0",
         "laravel/horizon": "~4.3",
+        "laravel/passport": "^9.3",
         "laravel/tinker": "^2.0",
         "mews/captcha": "~3.0",
         "mews/purifier": "~3.0",
