@@ -2,7 +2,7 @@
 
 namespace App\Models\Traits;
 
-use Redis;
+use Illuminate\Support\Facades\Redis;
 use Carbon\Carbon;
 
 trait LastActivedAtHelper
@@ -23,7 +23,7 @@ trait LastActivedAtHelper
         $now = Carbon::now()->toDateTimeString();
 
         // 数据写入 Redis ，字段已存在会被更新
-        Redis::hSet($hash, $field, $now);
+        Redis::hset($hash, $field, $now);
     }
 
     public function syncUserActivedAt()
