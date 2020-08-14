@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "doctrine/dbal": "^2.10",
         "fideloper/proxy": "^4.0",
         "guzzlehttp/guzzle": "~6.3",
         "intervention/image": "^2.5",
