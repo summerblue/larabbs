@@ -13,10 +13,10 @@ class VerificationCodesController extends Controller
 {
     public function store(VerificationCodeRequest $request, EasySms $easySms)
     {
+        $phone = $request->phone;
         if (!app()->environment('production')){
-            $code = 0000;
+            $code = '0000';
         }else{
-            $phone = $request->phone;
             // 生成4位随机数，左侧补0
             $code = str_pad(random_int(1, 9999), 4, 0, STR_PAD_LEFT);
             try {
