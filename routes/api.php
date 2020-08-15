@@ -16,10 +16,22 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+// 版本v1
+Route::prefix('v1')->namespace('Api')
+                   ->name('api.v1.')
+                   ->group(function () {
+
+    // 登录限制
+    Route::middleware('throttle:' . config('api.rate_limits.sign'))->group(function(){
+        // 短信验证码
+        Route::post('verificationCodes', 'VerificationCodesController@store')->name('verificationCodes.store');
+        // 用户注册
+        Route::post('users', 'UsersController@store')->name('users.store');
+    });
     
-Route::prefix('v1')->namespace('Api')->name('api.v1.')->group(function () {
-    // 短信验证码
-    Route::post('verificationCodes', 'VerificationCodesController@store')->name('verificationCodes.store');
-    // 用户注册
-    Route::post('users', 'UsersController@store')->name('users.store');
+    // 访问限制
+    Route::middleware('throttle:' . config('api.rate_limits.access'))->group(function(){
+    
+    });
 });
