@@ -11,6 +11,7 @@
         "php": "^7.2",
         "doctrine/dbal": "^2.10",
         "fideloper/proxy": "^4.0",
+        "gregwar/captcha": "^1.1",
         "guzzlehttp/guzzle": "~6.3",
         "intervention/image": "^2.5",
         "laravel/framework": "^6.0",
