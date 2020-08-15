@@ -24,6 +24,8 @@ Route::prefix('v1')->namespace('Api')
 
     // 登录限制
     Route::middleware('throttle:' . config('api.rate_limits.sign'))->group(function(){
+        // 输入手机号获取图片验证码
+        Route::post('captchas', 'CaptchasController@store')->name('captchas.store');
         // 短信验证码
         Route::post('verificationCodes', 'VerificationCodesController@store')->name('verificationCodes.store');
         // 用户注册
