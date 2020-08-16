@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cec57a6-9c2d-4ae0-9473-4a33807d2d66" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/VerificationCodesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/VerificationCodesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Api/VerificationCodeRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Api/VerificationCodeRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +20,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="554">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env.example">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="55" column="10" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -30,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/VerificationCodesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+            <state relative-caret-position="329">
+              <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
               <folding>
                 <element signature="e#44#71#0#PHP" expanded="true" />
               </folding>
@@ -70,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UsersController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#44#64#0#PHP" expanded="true" />
               </folding>
@@ -108,6 +125,7 @@
       <find>regex:/^((13[0-9])|(14[5,7])|(15[0-3,5-9])|(17[0,3,5-8])|(18[0-9])|166|198|199)\d{8}$/</find>
       <find>verificationCodes</find>
       <find>AuthenticationException</find>
+      <find>$captchaCache['code']</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -125,8 +143,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/Controller.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/Api/FormRequest.php" />
         <option value="$PROJECT_DIR$/config/easysms.php" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/.env.example" />
         <option value="$PROJECT_DIR$/config/cache.php" />
         <option value="$PROJECT_DIR$/app/Models/User.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/Api/UserRequest.php" />
@@ -139,6 +155,8 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/CaptchasController.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/Api/VerificationCodeRequest.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/VerificationCodesController.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/.env.example" />
       </list>
     </option>
   </component>
@@ -273,6 +291,9 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
       <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
       <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/gregwar/captcha" />
+      <path value="$PROJECT_DIR$/vendor/overtrue/laravel-socialite" />
+      <path value="$PROJECT_DIR$/vendor/overtrue/socialite" />
     </include_path>
   </component>
   <component name="ProjectConfigurationFiles">
@@ -287,8 +308,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -307,49 +328,6 @@
               <item name="larabbs" type="b2602c69:ProjectViewProjectNode" />
               <item name="larabbs" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="larabbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="larabbs" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="larabbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="larabbs" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="larabbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="larabbs" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="larabbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="larabbs" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Requests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="larabbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="larabbs" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Requests" type="462c0819:PsiDirectoryNode" />
-              <item name="Api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="larabbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="larabbs" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="larabbs" type="b2602c69:ProjectViewProjectNode" />
@@ -458,7 +436,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26656000" />
+    <option name="totallyTimeSpent" value="27197000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
@@ -589,13 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env.example">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1402">
-          <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="469">
@@ -670,13 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="610">
           <caret line="141" column="44" selection-start-line="141" selection-start-column="44" selection-end-line="141" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -787,7 +751,7 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UsersController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#44#64#0#PHP" expanded="true" />
           </folding>
@@ -796,11 +760,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/VerificationCodesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        <state relative-caret-position="329">
+          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
           <folding>
             <element signature="e#44#71#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.example">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="55" column="10" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
