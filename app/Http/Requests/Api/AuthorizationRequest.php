@@ -6,7 +6,6 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class AuthorizationRequest extends FormRequest
 {
-
     /**
      * Get the validation rules that apply to the request.
      *
@@ -14,13 +13,9 @@ class AuthorizationRequest extends FormRequest
      */
     public function rules()
     {
-        $rules = [
-            'code' => 'required_without:access_token|string',
-            'access_token' => 'required_without:code|string',
+        return [
+            'username' => 'required|string',
+            'password' => 'required|alpha_dash|min:6',
         ];
-        if ($this->social_type == 'wechat' && !$this->code) {
-            $rules['openid'] = 'required|string';
-        }
-        return $rules;
     }
 }

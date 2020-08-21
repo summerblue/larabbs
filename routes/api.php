@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +34,8 @@ Route::prefix('v1')->namespace('Api')
         // 第三方登录
         Route::post('socials/{social_type}/authorizations', 'AuthorizationsController@socialStore')->where('social_type', 'wechat')
                                                                                                    ->name('socials.authorizations.store');
+        // 登录
+        Route::post('authorizations', 'AuthorizationsController@store')->name('api.authorizations.store');
     });
     
     // 访问限制
