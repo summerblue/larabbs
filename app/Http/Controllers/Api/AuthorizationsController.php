@@ -74,6 +74,8 @@ class AuthorizationsController extends Controller
                 break;
         }
 
+        $token = auth('api')->login($user);
+
         return $this->respondWithToken($token)->setStatusCode(201);
     }
 
