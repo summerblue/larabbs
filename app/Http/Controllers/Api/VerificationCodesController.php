@@ -5,8 +5,8 @@ namespace App\Http\Controllers\Api;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Overtrue\EasySms\EasySms;
+use Illuminate\Auth\AuthenticationException;
 use App\Http\Requests\Api\VerificationCodeRequest;
-use Illuminate\Auth\AuthenticationException;
 
 class VerificationCodesController extends Controller
 {
