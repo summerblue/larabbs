@@ -23,7 +23,7 @@ class GenerateToken extends Command
         $user = User::find($userId);
 
         if (!$user) {
-            $this->error('用户不存在');
+            return $this->error('用户不存在');
         }
 
         // 一年以后过期
