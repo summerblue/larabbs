@@ -1,0 +1,32 @@
+<?php
+
+namespace App\Http\Controllers\Api;
+
+use App\Http\Requests\Api\UserRequest;
+use App\Http\Resources\UserResource;
+use App\Models\User;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Auth\AuthenticationException;
+
+class UsersController extends Controller
+{
+    public function store(UserRequest $request){
+        $verificationData = Cache::get($request->verification_key);
+        if(!$verificationData){
+            abort(403,'验证码已失效');
+        }
+        if(!hash_equals($verificationData['code'],$request->verification_code)){
+            // 返回401
+            throw new AuthenticationException('验证码错误');
+        }
+
+        $user = User::create([
+            'name' => $request->name,
+            'phone' => $verificationData['phone'],
+            'password' => $request->password,
+        ]);
+        Cache::forget($request->verification_key);
+        return new UserResource($user);
+    }
+}
