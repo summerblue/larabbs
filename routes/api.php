@@ -18,9 +18,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::prefix('v1')->group(function() {
-    Route::get('version', function() {
-        abort(403);
-        return 'this is version v1';
-    })->name('version');
+Route::prefix('v1')->namespace('Api')->group(function() {
+    Route::get('version','TestController@sendsms')->name('version');
 });
