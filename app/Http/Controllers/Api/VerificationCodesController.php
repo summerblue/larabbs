@@ -8,12 +8,22 @@ use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Str;
 use Overtrue\EasySms\EasySms;
 use App\Http\Requests\Api\VerificationCodeRequest;
+use Illuminate\Auth\AuthenticationException;
 
 class VerificationCodesController extends Controller
 {
     public function store(VerificationCodeRequest $request,EasySms $easySms){
-        $phone = $request->phone;
+        $key = $request->captcha_key;
+        $captchaData = Cache::get($key);
+        if(!$captchaData){
+            abort(403,'图片验证码已失效');
+        }
+        if(!hash_equals($captchaData['code'],$request->captcha_code)){
+            // 返回401
+            throw new AuthenticationException('图片验证码错误');
+        }
 
+        $phone = $captchaData['phone'];
         if(!app()->environment('production')){
             $code = '1234';
         }else{
