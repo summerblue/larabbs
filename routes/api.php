@@ -35,10 +35,10 @@ Route::prefix('v1')->namespace('Api')->name('api.v1.')->group(function () {
 
     Route::middleware('throttle:' . config('api.rate_limits.access'))->group(function (){
         // 游客可以访问的接口
-
         // 某个用户的详情
         Route::get('users/{user}', 'UsersController@show')->name('users.show');
-
+        //分类列表
+        Route::get('categories','CategoriesController@show')->name('categories.show');
         // 登录后可以访问的接口
         Route::middleware('auth:api')->group(function() {
             // 上传图片
@@ -49,6 +49,7 @@ Route::prefix('v1')->namespace('Api')->name('api.v1.')->group(function () {
             Route::patch('user', 'UsersController@update')->name('user.update');
         });
     });
+    //查看激活码图片
     Route::get('captchas/{captcha_key}', 'CaptchasController@show')->name('captchas.show');
 
 });
