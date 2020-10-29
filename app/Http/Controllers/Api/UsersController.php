@@ -29,4 +29,18 @@ class UsersController extends Controller
         Cache::forget($request->verification_key);
         return new UserResource($user);
     }
+
+    /*
+     * 某个用户的信息
+     */
+    public function show(User $user){
+        return new UserResource($user);
+    }
+    /*
+     * 当前登录用户的信息
+     */
+    public function me(Request $request){
+        
+        return (new UserResource($request->user()))->showSensitiveFields();
+    }
 }
