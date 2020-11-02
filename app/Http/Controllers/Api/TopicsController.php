@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Http\Queries\TopicQuery;
 use App\Http\Requests\Api\TopicRequest;
 use App\Models\Topic;
 use Illuminate\Http\Request;
@@ -43,29 +44,25 @@ class TopicsController extends Controller
     /*
      * 话题列表
      */
-    public function index(){
-        $topics = QueryBuilder::for(Topic::class)
-            ->allowedIncludes('user','category')
-            ->allowedFilters([
-                'title',
-                AllowedFilter::exact('category_id'),
-                AllowedFilter::scope('withOrder')->default('recentReplied')
-            ])->paginate();
+    public function index(TopicQuery $query){
+        $topics = $query->paginate();
         return TopicResource::collection($topics);
     }
 
     /*
      * 某个用户的话题列表
      */
-    public function userIndex(User $user){
-        $query = $user->topics()->getQuery();
-        $topics = QueryBuilder::for($query)
-            ->allowedIncludes('user','category')
-            ->allowedFilters([
-                'title',
-                AllowedFilter::exact('category_id'),
-                AllowedFilter::scope('withOrder')->default('recentReplied')
-            ])->where('user_id',$user->id)->paginate();
+    public function userIndex(User $user,TopicQuery $query){
+
+        $topics = $query->where('user_id',$user->id)->paginate();
         return TopicResource::collection($topics);
+    }
+
+    /*
+     * 话题详情
+     */
+    public function show($topicId,TopicQuery $query){
+        $topic = $query->findOrFail($topicId);
+        return new TopicResource($topic);
     }
 }
