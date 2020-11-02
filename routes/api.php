@@ -39,6 +39,8 @@ Route::prefix('v1')->namespace('Api')->name('api.v1.')->group(function () {
         Route::get('users/{user}', 'UsersController@show')->name('users.show');
         //分类列表
         Route::get('categories','CategoriesController@show')->name('categories.show');
+        // 话题列表，详情
+        Route::resource('topics', 'TopicsController')->only(['index','show']);
         // 登录后可以访问的接口
         Route::middleware('auth:api')->group(function() {
             // 上传图片
@@ -47,6 +49,8 @@ Route::prefix('v1')->namespace('Api')->name('api.v1.')->group(function () {
             Route::get('user', 'UsersController@me')->name('user.show');
             // 编辑登录用户信息
             Route::patch('user', 'UsersController@update')->name('user.update');
+            //发布话题
+            Route::resource('topics','TopicsController')->only(['store','update','destroy']);
         });
     });
     //查看激活码图片
