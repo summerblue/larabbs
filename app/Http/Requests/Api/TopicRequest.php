@@ -21,7 +21,7 @@ class TopicRequest extends FormRequest
                 return [
                     'title'=>'string',
                     'body'=>'string',
-                    'catgory_id'=>'exists:categories,id'
+                    'catgory_id'=>'exists:categories,id',
                 ];
                 break;
         }
