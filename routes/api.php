@@ -53,6 +53,11 @@ Route::prefix('v1')->namespace('Api')->name('api.v1.')->group(function () {
             Route::patch('user', 'UsersController@update')->name('user.update');
             //发布话题
             Route::resource('topics','TopicsController')->only(['store','update','destroy']);
+            //发表回复
+            Route::post('topics/{topic}/replies','RepliesController@store')->name('topics.replies.store');
+            //删除回复
+            Route::delete('topics/{topic}/replies/{reply}','RepliesController@destroy')
+                ->name('topics.replies.destroy');
         });
     });
     //查看激活码图片
