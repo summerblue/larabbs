@@ -14,4 +14,13 @@ class NotificationsController extends Controller
         $data = $request->user()->notifications()->paginate();
         return NotificationResource::collection($data);
     }
+
+    /*
+     * 未读消息数量
+     */
+    public function stats(Request $request){
+        return response()->json([
+            'unread_count' => $request->user()->notification_count,
+        ]);
+    }
 }
