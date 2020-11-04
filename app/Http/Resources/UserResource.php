@@ -20,6 +20,7 @@ class UserResource extends JsonResource
         $data = parent::toArray($request);
         $data['bound_phone'] = $this->resource->phone ? true : false;
         $data['bound_weixin'] = $this->resource->weixin_openid ? true : false;
+        $data['roles'] = RoleResource::collection($this->whenLoaded('roles'));
         return $data;
     }
 
