@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::prefix('v1')->namespace('Api')->name('api.v1.')->group(function () {
+Route::prefix('v1')->namespace('Api')->middleware('change-locale')->name('api.v1.')->group(function () {
     Route::middleware('throttle:'.config('api.rate_limits.sign'))->group(function (){
         // 图片验证码
         Route::post('captchas', 'CaptchasController@store')->name('captchas.store');
