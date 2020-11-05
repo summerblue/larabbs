@@ -13,7 +13,6 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
 Route::prefix('v1')->namespace('Api')->middleware('change-locale')->name('api.v1.')->group(function () {
     Route::middleware('throttle:'.config('api.rate_limits.sign'))->group(function (){
         // 图片验证码

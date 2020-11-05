@@ -55,7 +55,7 @@ class Handler extends ExceptionHandler
     }
 
     /*
-     * 重写该方法
+     * 重写父类方法
      * 增加了code字段，以显示自定义错误码
      */
     protected function convertExceptionToArray(Throwable $e)

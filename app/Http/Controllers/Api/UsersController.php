@@ -66,4 +66,9 @@ class UsersController extends Controller
         UserResource::wrap('data');
         return UserResource::collection($users);
     }
+
+    public function test22(User $user){
+        echo '55555';
+        return $user->name;
+    }
 }
