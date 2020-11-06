@@ -27,7 +27,7 @@ class AuthServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->registerPolicies();
-        
+
         // Passport 的路由
         Passport::routes();
         // access_token 过期时间
