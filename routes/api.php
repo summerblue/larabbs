@@ -20,6 +20,9 @@ Route::prefix('v1')->namespace('Api')->name("api.v1.")
         //登录相关限制
         Route::middleware('throttle:' . config('api.rate_limits.sign'))
             ->group(function (){
+
+                Route::post('captchas','CaptchasController@store')->name('captchas.store');
+
                 //短信验证码
                 Route::post('verificationCodes','VerificationCodesController@store')
                     ->name('verificationCodes.store');
