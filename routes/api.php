@@ -29,6 +29,11 @@ Route::prefix('v1')->namespace('Api')->name("api.v1.")
 
                 //用户注册
                 Route::post('users','UsersController@store')->name('users.store');
+
+                //第三方登录
+                Route::post('socials/{social_type}/authorizations','AuthorizationsController@socialStore')
+                    ->where(['social_type'=>'wechat'])
+                    ->name('socials.authorizations.store');
             });
 
         //访问相关限制
