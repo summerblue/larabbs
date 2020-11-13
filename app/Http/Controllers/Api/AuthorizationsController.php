@@ -8,12 +8,13 @@ use App\Models\User;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Http\Request;
 use Overtrue\Socialite\AccessToken;
+use Overtrue\LaravelSocialite\Socialite;
 
 class AuthorizationsController extends Controller
 {
     public function socialStore($type,SocialAuthorizationRequest $request)
     {
-        $driver = \Socialite::driver($type);
+        $driver = Socialite::driver($type);
 
         try{
             if($code = $request->code){
