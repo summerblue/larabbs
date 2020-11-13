@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "389b7fbfc6a0a77c372ddd6718d6bd37",
+    "content-hash": "c5e566cd2234d2ca34f12295e90a0a37",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2435,6 +2435,58 @@
             "time": "2020-03-06T02:39:28+00:00"
         },
         {
+            "name": "overtrue/laravel-socialite",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/overtrue/laravel-socialite.git",
+                "reference": "97f89759b8286c4a3bfbf22252cbcfebe9f3b910"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/overtrue/laravel-socialite/zipball/97f89759b8286c4a3bfbf22252cbcfebe9f3b910",
+                "reference": "97f89759b8286c4a3bfbf22252cbcfebe9f3b910",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "overtrue/socialite": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Overtrue\\LaravelSocialite\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "Socialite": "Overtrue\\LaravelSocialite\\Socialite"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Overtrue\\LaravelSocialite\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "overtrue",
+                    "email": "anzhengchao@gmail.com"
+                }
+            ],
+            "description": "Social OAuth authentication for Laravel 5.",
+            "time": "2019-04-06T08:08:41+00:00"
+        },
+        {
             "name": "overtrue/pinyin",
             "version": "4.0.6",
             "source": {
@@ -2502,6 +2554,66 @@
                 "cn2pinyin"
             ],
             "time": "2020-04-13T08:53:30+00:00"
+        },
+        {
+            "name": "overtrue/socialite",
+            "version": "2.0.22",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/overtrue/socialite.git",
+                "reference": "0ce3285293026a639de317a70b01eeef051e9962"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/overtrue/socialite/zipball/0ce3285293026a639de317a70b01eeef051e9962",
+                "reference": "0ce3285293026a639de317a70b01eeef051e9962",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-json": "*",
+                "guzzlehttp/guzzle": "^5.0|^6.0|^7.0",
+                "php": ">=5.6",
+                "symfony/http-foundation": "^2.7|^3.0|^4.0|^5.0"
+            },
+            "conflict": {
+                "socialiteproviders/weixin": "*"
+            },
+            "require-dev": {
+                "mockery/mockery": "~1.2",
+                "phpunit/phpunit": "~6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Overtrue\\Socialite\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "overtrue",
+                    "email": "anzhengchao@gmail.com"
+                }
+            ],
+            "description": "A collection of OAuth 2 packages that extracts from laravel/socialite.",
+            "keywords": [
+                "login",
+                "oauth",
+                "qq",
+                "social",
+                "wechat",
+                "weibo"
+            ],
+            "time": "2020-11-12T23:23:15+00:00"
         },
         {
             "name": "paragonie/random_compat",
