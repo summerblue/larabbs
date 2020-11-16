@@ -32,10 +32,16 @@ class UsersController extends Controller
         //清除验证码缓存
         \Cache::forget($request->input('verification_key'));
 
-        $user->family = [
-            'mama' => 'helo',
-            'baby' => 'world'
-        ];
+        return (new UserResource($user))->showSensitiveFields();
+    }
+
+    public function show(User $user)
+    {
         return new UserResource($user);
+    }
+
+    public function me(Request $request)
+    {
+        return (new UserResource($request->user()))->showSensitiveFields();
     }
 }
