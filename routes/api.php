@@ -52,6 +52,7 @@ Route::prefix('v1')->namespace('Api')->name("api.v1.")
 
                 //某个用户的详情
                 Route::get('users/{user}','UsersController@show')->name('users.show');
+                Route::get('categories','CategoriesController@index')->name('categories.index');
 
                 //登录后可以访问的接口
 
