@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Resources\NotificationResource;
 use Illuminate\Http\Request;
+use Illuminate\Notifications\DatabaseNotification;
 
 class NotificationsController extends Controller
 {
@@ -21,10 +22,14 @@ class NotificationsController extends Controller
         ]);
     }
 
-    public function read(Request $request)
+    public function read(Request $request,DatabaseNotification $notification=null)
     {
-        $request->user()->markAsRead();
-
+        if($notification){
+            $request->user()->decrement('notification_count');
+            $notification->markAsRead();
+        }else{
+            $request->user()->markAsRead();
+        }
         return response(null,204);
     }
 }
