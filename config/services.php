@@ -39,6 +39,10 @@ return [
         'client_id' => env('WEIXIN_KEY'),
         'client_secret' => env('WEIXIN_SECRET'),
         'redirect' => env('WEIXIN_REDIRECT_URI'),
+<<<<<<< HEAD
     ]
+=======
+    ],
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
 
 ];

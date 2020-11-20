@@ -3,6 +3,7 @@
 namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Support\Arr;
 use Throwable;
 use Illuminate\Support\Arr;
 
@@ -67,7 +68,11 @@ class Handler extends ExceptionHandler
             })->all(),
         ] : [
             'message' => $this->isHttpException($e) ? $e->getMessage() : 'Server Error',
+<<<<<<< HEAD
             'code' => $e->getCode(),
+=======
+		    'code' => $e->getCode(),
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
         ];
     }
 }

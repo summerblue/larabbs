@@ -11,6 +11,7 @@ class VerificationCodeRequest extends FormRequest
      */
     public function rules()
     {
+<<<<<<< HEAD
 //        return [
 //            'phone' => [
 //                'required',
@@ -18,6 +19,8 @@ class VerificationCodeRequest extends FormRequest
 //                'unique:users'
 //            ]
 //        ];
+=======
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
         return [
             'captcha_key' => 'required|string',
             'captcha_code' => 'required|string',

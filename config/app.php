@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Application Name
@@ -176,7 +175,11 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         App\Providers\EasySmsServiceProvider::class,
+<<<<<<< HEAD
 
+=======
+        App\Providers\JpushServiceProvider::class,
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
     ],
 
     /*

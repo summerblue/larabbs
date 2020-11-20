@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "4bf6dca54dcfd0dcfc2fac72da666190",
+=======
+    "content-hash": "3ea0c1001d1392bdd0e50afdff86e6f9",
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -404,6 +408,7 @@
         },
         {
             "name": "doctrine/dbal",
+<<<<<<< HEAD
             "version": "2.12.0",
             "source": {
                 "type": "git",
@@ -414,6 +419,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/doctrine/dbal/zipball/c6d37b4c42aaa3c3ee175f05eca68056f4185646",
                 "reference": "c6d37b4c42aaa3c3ee175f05eca68056f4185646",
+=======
+            "version": "2.10.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/dbal.git",
+                "reference": "aab745e7b6b2de3b47019da81e7225e14dcfdac8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/aab745e7b6b2de3b47019da81e7225e14dcfdac8",
+                "reference": "aab745e7b6b2de3b47019da81e7225e14dcfdac8",
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
                 "shasum": "",
                 "mirrors": [
                     {
@@ -426,6 +443,7 @@
                 "doctrine/cache": "^1.0",
                 "doctrine/event-manager": "^1.0",
                 "ext-pdo": "*",
+<<<<<<< HEAD
                 "php": "^7.3 || ^8"
             },
             "require-dev": {
@@ -436,6 +454,18 @@
                 "psalm/plugin-phpunit": "^0.10.0",
                 "symfony/console": "^2.0.5|^3.0|^4.0|^5.0",
                 "vimeo/psalm": "^3.17.2"
+=======
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^6.0",
+                "jetbrains/phpstorm-stubs": "^2019.1",
+                "nikic/php-parser": "^4.4",
+                "phpstan/phpstan": "^0.12",
+                "phpunit/phpunit": "^8.4.1",
+                "symfony/console": "^2.0.5|^3.0|^4.0|^5.0",
+                "vimeo/psalm": "^3.11"
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
             },
             "suggest": {
                 "symfony/console": "For helpful console commands such as SQL execution and import of files."
@@ -446,7 +476,12 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
+<<<<<<< HEAD
                     "dev-master": "4.0.x-dev"
+=======
+                    "dev-master": "2.10.x-dev",
+                    "dev-develop": "3.0.x-dev"
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
                 }
             },
             "autoload": {
@@ -499,6 +534,7 @@
                 "sqlserver",
                 "sqlsrv"
             ],
+<<<<<<< HEAD
             "time": "2020-10-22T17:26:24+00:00"
         },
         {
@@ -513,6 +549,22 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/doctrine/event-manager/zipball/41370af6a30faa9dc0368c4a6814d596e81aba7f",
                 "reference": "41370af6a30faa9dc0368c4a6814d596e81aba7f",
+=======
+            "time": "2020-04-20T17:19:26+00:00"
+        },
+        {
+            "name": "doctrine/event-manager",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/event-manager.git",
+                "reference": "629572819973f13486371cb611386eb17851e85c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/event-manager/zipball/629572819973f13486371cb611386eb17851e85c",
+                "reference": "629572819973f13486371cb611386eb17851e85c",
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
                 "shasum": "",
                 "mirrors": [
                     {
@@ -522,7 +574,11 @@
                 ]
             },
             "require": {
+<<<<<<< HEAD
                 "php": "^7.1 || ^8.0"
+=======
+                "php": "^7.1"
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
             },
             "conflict": {
                 "doctrine/common": "<2.9@dev"
@@ -581,7 +637,11 @@
                 "event system",
                 "events"
             ],
+<<<<<<< HEAD
             "time": "2020-05-29T18:28:51+00:00"
+=======
+            "time": "2019-11-10T09:48:07+00:00"
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
         },
         {
             "name": "doctrine/inflector",
@@ -1391,6 +1451,55 @@
             "time": "2019-11-02T09:15:47+00:00"
         },
         {
+            "name": "jpush/jpush",
+            "version": "v3.6.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jpush/jpush-api-php-client.git",
+                "reference": "64ff7f5919c80801f43b8332250e392b116521c6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jpush/jpush-api-php-client/zipball/64ff7f5919c80801f43b8332250e392b116521c6",
+                "reference": "64ff7f5919c80801f43b8332250e392b116521c6",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JPush\\": "src/JPush/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "JPush",
+                    "email": "support@jpush.cn",
+                    "homepage": "https://www.jpush.cn/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "JPush API PHP Client",
+            "homepage": "https://github.com/jpush/jpush-api-php-client",
+            "time": "2019-11-26T06:04:53+00:00"
+        },
+        {
             "name": "laravel/framework",
             "version": "v7.22.4",
             "source": {
@@ -1701,6 +1810,77 @@
                 "psysh"
             ],
             "time": "2020-07-07T15:10:00+00:00"
+        },
+        {
+            "name": "lcobucci/jwt",
+            "version": "3.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lcobucci/jwt.git",
+                "reference": "56f10808089e38623345e28af2f2d5e4eb579455"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/56f10808089e38623345e28af2f2d5e4eb579455",
+                "reference": "56f10808089e38623345e28af2f2d5e4eb579455",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "ext-openssl": "*",
+                "php": "^5.6 || ^7.0"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "~1.5",
+                "phpmd/phpmd": "~2.2",
+                "phpunit/php-invoker": "~1.1",
+                "phpunit/phpunit": "^5.7 || ^7.3",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lcobucci\\JWT\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Luís Otávio Cobucci Oblonczyk",
+                    "email": "lcobucci@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple library to work with JSON Web Token and JSON Web Signature",
+            "keywords": [
+                "JWS",
+                "jwt"
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/lcobucci",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/lcobucci",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2020-05-22T08:21:12+00:00"
         },
         {
             "name": "lcobucci/jwt",
@@ -2455,6 +2635,7 @@
         },
         {
             "name": "overtrue/easy-sms",
+<<<<<<< HEAD
             "version": "1.1.24",
             "source": {
                 "type": "git",
@@ -2465,6 +2646,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/overtrue/easy-sms/zipball/b60a5453250de1b812faa407145c4c9392183e39",
                 "reference": "b60a5453250de1b812faa407145c4c9392183e39",
+=======
+            "version": "1.1.23",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/overtrue/easy-sms.git",
+                "reference": "90b1303f5fe23e5ba12d44755cfbbf78eb125c6a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/overtrue/easy-sms/zipball/90b1303f5fe23e5ba12d44755cfbbf78eb125c6a",
+                "reference": "90b1303f5fe23e5ba12d44755cfbbf78eb125c6a",
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2475,7 +2668,11 @@
             },
             "require": {
                 "ext-json": "*",
+<<<<<<< HEAD
                 "guzzlehttp/guzzle": "^6.2 || ^7.0",
+=======
+                "guzzlehttp/guzzle": "^6.2",
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
                 "php": ">=5.6"
             },
             "require-dev": {
@@ -2499,7 +2696,11 @@
                 }
             ],
             "description": "The easiest way to send short message.",
+<<<<<<< HEAD
             "time": "2020-08-04T08:19:26+00:00"
+=======
+            "time": "2020-05-06T08:09:01+00:00"
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
         },
         {
             "name": "overtrue/laravel-lang",
@@ -2617,6 +2818,58 @@
             "time": "2019-04-06T08:08:41+00:00"
         },
         {
+            "name": "overtrue/laravel-socialite",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/overtrue/laravel-socialite.git",
+                "reference": "dd24ad6ae71cd5f5f5a52bba72930c26e9d6de6a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/overtrue/laravel-socialite/zipball/dd24ad6ae71cd5f5f5a52bba72930c26e9d6de6a",
+                "reference": "dd24ad6ae71cd5f5f5a52bba72930c26e9d6de6a",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "overtrue/socialite": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Overtrue\\LaravelSocialite\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "Socialite": "Overtrue\\LaravelSocialite\\Socialite"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Overtrue\\LaravelSocialite\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "overtrue",
+                    "email": "anzhengchao@gmail.com"
+                }
+            ],
+            "description": "Social OAuth authentication for Laravel 5.",
+            "time": "2017-12-14T05:34:22+00:00"
+        },
+        {
             "name": "overtrue/pinyin",
             "version": "4.0.6",
             "source": {
@@ -2687,6 +2940,7 @@
         },
         {
             "name": "overtrue/socialite",
+<<<<<<< HEAD
             "version": "2.0.22",
             "source": {
                 "type": "git",
@@ -2697,6 +2951,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/overtrue/socialite/zipball/0ce3285293026a639de317a70b01eeef051e9962",
                 "reference": "0ce3285293026a639de317a70b01eeef051e9962",
+=======
+            "version": "2.0.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/overtrue/socialite.git",
+                "reference": "bbcd8ffd2e1f3aa7c4d5298c56c6d73803aa3067"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/overtrue/socialite/zipball/bbcd8ffd2e1f3aa7c4d5298c56c6d73803aa3067",
+                "reference": "bbcd8ffd2e1f3aa7c4d5298c56c6d73803aa3067",
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2707,8 +2973,13 @@
             },
             "require": {
                 "ext-json": "*",
+<<<<<<< HEAD
                 "guzzlehttp/guzzle": "^5.0|^6.0|^7.0",
                 "php": ">=5.6",
+=======
+                "guzzlehttp/guzzle": "~5.0|~6.0",
+                "php": ">=7.0",
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
                 "symfony/http-foundation": "^2.7|^3.0|^4.0|^5.0"
             },
             "conflict": {
@@ -2743,7 +3014,17 @@
                 "wechat",
                 "weibo"
             ],
+<<<<<<< HEAD
             "time": "2020-11-12T23:23:15+00:00"
+=======
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/overtrue",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2020-03-04T15:22:25+00:00"
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
         },
         {
             "name": "paragonie/random_compat",
@@ -3534,6 +3815,76 @@
                 "spatie"
             ],
             "time": "2020-05-20T00:31:29+00:00"
+        },
+        {
+            "name": "spatie/laravel-query-builder",
+            "version": "2.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-query-builder.git",
+                "reference": "2737b2298e8bfeb632a80013646943307bf31775"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-query-builder/zipball/2737b2298e8bfeb632a80013646943307bf31775",
+                "reference": "2737b2298e8bfeb632a80013646943307bf31775",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "illuminate/database": "~5.6.34|~5.7.0|~5.8.0|^6.0|^7.0",
+                "illuminate/http": "~5.6.34|~5.7.0|~5.8.0|^6.0|^7.0",
+                "illuminate/support": "~5.6.34|~5.7.0|~5.8.0|^6.0|^7.0",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "ext-json": "*",
+                "orchestra/testbench": "~3.6.0|~3.7.0|~3.8.0|^4.0|^5.0",
+                "phpunit/phpunit": "^7.0|^8.0|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\QueryBuilder\\QueryBuilderServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\QueryBuilder\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Vanderbist",
+                    "email": "alex@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily build Eloquent queries from API requests",
+            "homepage": "https://github.com/spatie/laravel-query-builder",
+            "keywords": [
+                "laravel-query-builder",
+                "spatie"
+            ],
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                }
+            ],
+            "time": "2020-05-25T09:36:37+00:00"
         },
         {
             "name": "spatie/laravel-query-builder",
@@ -4938,6 +5289,7 @@
         },
         {
             "name": "symfony/polyfill-php56",
+<<<<<<< HEAD
             "version": "v1.20.0",
             "source": {
                 "type": "git",
@@ -4948,6 +5300,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/polyfill-php56/zipball/54b8cd7e6c1643d78d011f3be89f3ef1f9f4c675",
                 "reference": "54b8cd7e6c1643d78d011f3be89f3ef1f9f4c675",
+=======
+            "version": "v1.18.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php56.git",
+                "reference": "13df84e91cd168f247c2f2ec82cc0fa24901c011"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php56/zipball/13df84e91cd168f247c2f2ec82cc0fa24901c011",
+                "reference": "13df84e91cd168f247c2f2ec82cc0fa24901c011",
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
                 "shasum": "",
                 "mirrors": [
                     {
@@ -4957,18 +5321,39 @@
                 ]
             },
             "require": {
+<<<<<<< HEAD
                 "php": ">=7.1"
             },
             "type": "metapackage",
             "extra": {
                 "branch-alias": {
                     "dev-main": "1.20-dev"
+=======
+                "php": ">=5.3.3",
+                "symfony/polyfill-util": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.18-dev"
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
                     "url": "https://github.com/symfony/polyfill"
                 }
             },
+<<<<<<< HEAD
+=======
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php56\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -4991,7 +5376,25 @@
                 "portable",
                 "shim"
             ],
+<<<<<<< HEAD
             "time": "2020-10-23T14:02:19+00:00"
+=======
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-07-14T12:35:20+00:00"
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
         },
         {
             "name": "symfony/polyfill-php70",
@@ -5264,6 +5667,82 @@
                 "polyfill",
                 "portable",
                 "shim"
+            ],
+            "time": "2020-07-14T12:35:20+00:00"
+        },
+        {
+            "name": "symfony/polyfill-util",
+            "version": "v1.18.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-util.git",
+                "reference": "46b910c71e9828f8ec2aa7a0314de1130d9b295a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-util/zipball/46b910c71e9828f8ec2aa7a0314de1130d9b295a",
+                "reference": "46b910c71e9828f8ec2aa7a0314de1130d9b295a",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.18-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Util\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony utilities for portability of PHP codes",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compat",
+                "compatibility",
+                "polyfill",
+                "shim"
+            ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-07-14T12:35:20+00:00"
         },
@@ -5842,6 +6321,7 @@
         },
         {
             "name": "tymon/jwt-auth",
+<<<<<<< HEAD
             "version": "1.0.1",
             "source": {
                 "type": "git",
@@ -5852,6 +6332,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/tymondesigns/jwt-auth/zipball/b927137cd5bd4d2f5d48a1ca71bc85006b99dbae",
                 "reference": "b927137cd5bd4d2f5d48a1ca71bc85006b99dbae",
+=======
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tymondesigns/jwt-auth.git",
+                "reference": "d4cf9fd2b98790712d3e6cd1094e5ff018431f19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tymondesigns/jwt-auth/zipball/d4cf9fd2b98790712d3e6cd1094e5ff018431f19",
+                "reference": "d4cf9fd2b98790712d3e6cd1094e5ff018431f19",
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
                 "shasum": "",
                 "mirrors": [
                     {
@@ -5861,19 +6353,32 @@
                 ]
             },
             "require": {
+<<<<<<< HEAD
                 "illuminate/auth": "^5.2|^6|^7|^8",
                 "illuminate/contracts": "^5.2|^6|^7|^8",
                 "illuminate/http": "^5.2|^6|^7|^8",
                 "illuminate/support": "^5.2|^6|^7|^8",
+=======
+                "illuminate/auth": "^5.2|^6|^7",
+                "illuminate/contracts": "^5.2|^6|^7",
+                "illuminate/http": "^5.2|^6|^7",
+                "illuminate/support": "^5.2|^6|^7",
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
                 "lcobucci/jwt": "^3.2",
                 "namshi/jose": "^7.0",
                 "nesbot/carbon": "^1.0|^2.0",
                 "php": "^5.5.9|^7.0"
             },
             "require-dev": {
+<<<<<<< HEAD
                 "illuminate/console": "^5.2|^6|^7|^8",
                 "illuminate/database": "^5.2|^6|^7|^8",
                 "illuminate/routing": "^5.2|^6|^7|^8",
+=======
+                "illuminate/console": "^5.2|^6|^7",
+                "illuminate/database": "^5.2|^6|^7",
+                "illuminate/routing": "^5.2|^6|^7",
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
                 "mockery/mockery": ">=0.9.9",
                 "phpunit/phpunit": "~4.8|~6.0"
             },
@@ -5918,7 +6423,17 @@
                 "jwt",
                 "laravel"
             ],
+<<<<<<< HEAD
             "time": "2020-09-08T12:29:20+00:00"
+=======
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/seantymon",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2020-03-04T11:21:28+00:00"
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
         },
         {
             "name": "viacreative/sudo-su",
@@ -6934,6 +7449,7 @@
         },
         {
             "name": "overtrue/laravel-query-logger",
+<<<<<<< HEAD
             "version": "2.0.1",
             "source": {
                 "type": "git",
@@ -6944,6 +7460,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/overtrue/laravel-query-logger/zipball/9e25555425dde275f92b3ec63633d9cebfcaaaff",
                 "reference": "9e25555425dde275f92b3ec63633d9cebfcaaaff",
+=======
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/overtrue/laravel-query-logger.git",
+                "reference": "9aef8bf37d0bc20130688cd0e4221bbd448f9e14"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/overtrue/laravel-query-logger/zipball/9aef8bf37d0bc20130688cd0e4221bbd448f9e14",
+                "reference": "9aef8bf37d0bc20130688cd0e4221bbd448f9e14",
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
                 "shasum": "",
                 "mirrors": [
                     {
@@ -6953,7 +7481,11 @@
                 ]
             },
             "require": {
+<<<<<<< HEAD
                 "laravel/framework": "~5.5||~6.0||~7.0||~8.0"
+=======
+                "laravel/framework": "~5.5||~6.0||~7.0"
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
             },
             "type": "library",
             "extra": {
@@ -6989,7 +7521,11 @@
                 }
             ],
             "description": "A dev tool to log all queries for laravel application.",
+<<<<<<< HEAD
             "time": "2020-09-21T15:07:00+00:00"
+=======
+            "time": "2020-07-22T03:55:01+00:00"
+>>>>>>> f2c8031f97e0ba5e7b887e71a847a0cc605b6531
         },
         {
             "name": "phar-io/manifest",
@@ -8708,5 +9244,6 @@
     "platform": {
         "php": "^7.2.5"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
