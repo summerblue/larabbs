@@ -14,11 +14,13 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "intervention/image": "^2.5",
         "laravel/framework": "^8.12",
+        "laravel/horizon": "~5.6",
         "laravel/tinker": "^2.5",
         "mews/captcha": "~3.0",
         "mews/purifier": "~3.3",
         "overtrue/laravel-lang": "~4.0",
         "overtrue/pinyin": "~4.0",
+        "predis/predis": "~1.1",
         "summerblue/laravel-active": "8.*"
     },
     "require-dev": {
