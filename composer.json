@@ -31,7 +31,6 @@
         "spatie/laravel-query-builder": "^3.3",
         "summerblue/administrator": "8.*",
         "summerblue/laravel-active": "8.*",
-        "tymon/jwt-auth": "^1.0",
         "viacreative/sudo-su": "~1.1"
     },
     "require-dev": {
