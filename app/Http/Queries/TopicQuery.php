@@ -12,8 +12,8 @@ class TopicQuery extends QueryBuilder
     {
         parent::__construct(Topic::query());
 
-        $this->allowedIncludes('user', 'category')
-            ->allowedFilters([
+        $this->allowedIncludes('user', 'user.roles', 'category')
+             ->allowedFilters([
                 'title',
                 AllowedFilter::exact('category_id'),
                 AllowedFilter::scope('withOrder')->default('recentReplied'),
