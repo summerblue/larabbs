@@ -5,27 +5,32 @@ namespace App\Http\Controllers\Api;
 use App\Models\User;
 use Illuminate\Support\Arr;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Illuminate\Auth\AuthenticationException;
+use Psr\Http\Message\ServerRequestInterface;
+use Nyholm\Psr7\Response as Psr7Response;
+use League\OAuth2\Server\AuthorizationServer;
 use App\Http\Requests\Api\AuthorizationRequest;
 use App\Http\Requests\Api\SocialAuthorizationRequest;
+use League\OAuth2\Server\Exception\OAuthServerException;
 
 class AuthorizationsController extends Controller
 {
-    public function store(AuthorizationRequest $request)
+     public function store(AuthorizationRequest $originRequest, AuthorizationServer $server, ServerRequestInterface $serverRequest)
     {
-        $username = $request->username;
+        try {
+            $psrResponse = $server->respondToAccessTokenRequest($serverRequest, new Psr7Response);
 
-        filter_var($username, FILTER_VALIDATE_EMAIL) ?
-            $credentials['email'] = $username :
-            $credentials['phone'] = $username;
+	                return (new Response(
+                $psrResponse->getBody(),
+                $psrResponse->getStatusCode(),
+                $psrResponse->getHeaders()
+            ))->setStatusCode(201);
 
-        $credentials['password'] = $request->password;
 
-        if (!$token = \Auth::guard('api')->attempt($credentials)) {
-            throw new AuthenticationException(trans('auth.failed'));
+        } catch(OAuthServerException $e) {
+            throw new AuthenticationException($e->getMessage());
         }
-
-        return $this->respondWithToken($token)->setStatusCode(201);
     }
 
     public function socialStore($type, SocialAuthorizationRequest $request)
@@ -85,11 +90,16 @@ class AuthorizationsController extends Controller
         return $this->respondWithToken($token);
     }
 
-    public function destroy()
+        public function destroy()
     {
-        auth('api')->logout();
-        return response(null, 204);
-    }
+        if (auth('api')->check()) {
+            auth('api')->user()->token()->revoke();
+            return response(null, 204);
+		} else {
+            throw new AuthenticationException('The token is invalid.');
+		}
+	}
+
 
     protected function respondWithToken($token)
     {

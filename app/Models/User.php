@@ -9,6 +9,7 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Auth\MustVerifyEmail as MustVerifyEmailTrait;
 use Auth;
 use Spatie\Permission\Traits\HasRoles;
+use Laravel\Passport\HasApiTokens;
 
 class User extends Authenticatable implements MustVerifyEmailContract
 {
@@ -16,6 +17,7 @@ class User extends Authenticatable implements MustVerifyEmailContract
     use Traits\LastActivedAtHelper;
     use HasRoles;
     use HasFactory, MustVerifyEmailTrait;
+    use HasApiTokens;
 
     use Notifiable {
         notify as protected laravelNotify;
@@ -103,4 +105,14 @@ class User extends Authenticatable implements MustVerifyEmailContract
 
         $this->attributes['avatar'] = $path;
     }
+
+        public function findForPassport($username)
+	{
+		filter_var($username, FILTER_VALIDATE_EMAIL) ?
+		  $credentials['email'] = $username :
+		  $credentials['phone'] = $username;
+
+		return self::where($credentials)->first();
+	}
+
 }
