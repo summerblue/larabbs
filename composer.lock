@@ -1592,17 +1592,23 @@
         },
         {
             "name": "mews/captcha",
-            "version": "3.2.4",
+            "version": "3.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mewebstudio/captcha.git",
-                "reference": "616d006be6f53e87b93f6dc0f298fb29ca0b7d6c"
+                "reference": "41a3dac8cf45c8d3176fab7810adf1f5fd1d1802"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mewebstudio/captcha/zipball/616d006be6f53e87b93f6dc0f298fb29ca0b7d6c",
-                "reference": "616d006be6f53e87b93f6dc0f298fb29ca0b7d6c",
-                "shasum": ""
+                "url": "https://api.github.com/repos/mewebstudio/captcha/zipball/41a3dac8cf45c8d3176fab7810adf1f5fd1d1802",
+                "reference": "41a3dac8cf45c8d3176fab7810adf1f5fd1d1802",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "ext-gd": "*",
@@ -1612,7 +1618,7 @@
                 "illuminate/session": "~5|^6|^7|^8",
                 "illuminate/support": "~5|^6|^7|^8",
                 "intervention/image": "~2.5",
-                "php": "^7.2"
+                "php": "^7.2|^8.0"
             },
             "require-dev": {
                 "mockery/mockery": "^1.0",
@@ -1659,9 +1665,9 @@
             ],
             "support": {
                 "issues": "https://github.com/mewebstudio/captcha/issues",
-                "source": "https://github.com/mewebstudio/captcha/tree/3.2.4"
+                "source": "https://github.com/mewebstudio/captcha/tree/3.2.5"
             },
-            "time": "2020-12-14T12:34:10+00:00"
+            "time": "2021-01-17T21:30:23+00:00"
         },
         {
             "name": "mews/purifier",
