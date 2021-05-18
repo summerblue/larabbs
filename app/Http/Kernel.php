@@ -28,6 +28,8 @@ class Kernel extends HttpKernel
 
         // 将提交请求参数中空子串转换为 null
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+
+        \App\Http\Middleware\PerformanceDebug::class,
     ];
 
     // 设定中间件组
