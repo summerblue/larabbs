@@ -15,6 +15,7 @@
         "overtrue/laravel-lang": "~6.0"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "~3.6",
         "fakerphp/faker": "^1.9.1",
         "laravel/sail": "^1.0.1",
         "laravel/ui": "3.4.5",
