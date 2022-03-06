@@ -46,18 +46,19 @@ class TopicsController extends Controller
     }
 
 	public function edit(Topic $topic)
-	{
+    {
         $this->authorize('update', $topic);
-		return view('topics.create_and_edit', compact('topic'));
-	}
+        $categories = Category::all();
+        return view('topics.create_and_edit', compact('topic', 'categories'));
+    }
 
-	public function update(TopicRequest $request, Topic $topic)
-	{
-		$this->authorize('update', $topic);
-		$topic->update($request->all());
+    public function update(TopicRequest $request, Topic $topic)
+    {
+        $this->authorize('update', $topic);
+        $topic->update($request->all());
 
-		return redirect()->route('topics.show', $topic->id)->with('message', 'Updated successfully.');
-	}
+        return redirect()->route('topics.show', $topic->id)->with('success', '更新成功！');
+    }
 
 	public function destroy(Topic $topic)
 	{
