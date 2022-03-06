@@ -12,6 +12,7 @@
         "laravel/sanctum": "^2.14.1",
         "laravel/tinker": "^2.7",
         "mews/captcha": "~3.0",
+        "mews/purifier": "~3.3",
         "overtrue/laravel-lang": "~6.0",
         "summerblue/laravel-active": "9.*"
     },
