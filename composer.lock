@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c40ce046f2735b239f2a93cf289a301a",
+    "content-hash": "7b3af590845e9c14a16dec5838c12223",
     "packages": [
         {
             "name": "brick/math",
@@ -8710,6 +8710,73 @@
                 }
             ],
             "time": "2022-02-15T11:02:15+00:00"
+        },
+        {
+            "name": "summerblue/generator",
+            "version": "9.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/summerblue/generator.git",
+                "reference": "bfa995c2acb8fa22e7f1712cea1ea05e40d82a46"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/summerblue/generator/zipball/bfa995c2acb8fa22e7f1712cea1ea05e40d82a46",
+                "reference": "bfa995c2acb8fa22e7f1712cea1ea05e40d82a46",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "require-dev": {
+                "laravel/laravel": "9.*",
+                "phpunit/phpunit": "^9.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Summerblue\\Generator\\GeneratorsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Summerblue\\Generator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fernando Brito",
+                    "email": "fernandobritofl@gmail.com"
+                },
+                {
+                    "name": "Summer",
+                    "email": "summer@learnku.com"
+                }
+            ],
+            "description": "Extend Laravel's generators scaffold.",
+            "keywords": [
+                "generators",
+                "laravel",
+                "laravel5",
+                "scaffold"
+            ],
+            "support": {
+                "issues": "https://github.com/summerblue/generator/issues",
+                "source": "https://github.com/summerblue/generator/tree/9.0.2"
+            },
+            "time": "2022-03-06T08:13:19+00:00"
         },
         {
             "name": "theseer/tokenizer",
