@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\UsersController;
+use App\Http\Controllers\Api\CaptchasController;
 use App\Http\Controllers\Api\VerificationCodesController;
 
 /*
@@ -33,6 +34,9 @@ Route::prefix('v1')
 
         Route::middleware('throttle:' . config('api.rate_limits.access'))
             ->group(function () {
+                // 图片验证码
+                Route::post('captchas', [CaptchasController::class, 'store'])
+                    ->name('captchas.store');
 
             });
     });
