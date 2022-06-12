@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\UsersController;
 use App\Http\Controllers\Api\ImagesController;
+use App\Http\Controllers\Api\TopicsController;
 use App\Http\Controllers\Api\CaptchasController;
 use App\Http\Controllers\Api\CategoriesController;
 use App\Http\Controllers\Api\AuthorizationsController;
@@ -62,6 +63,11 @@ Route::prefix('v1')
                 Route::apiResource('categories', CategoriesController::class)
                     ->only('index');
 
+                // 话题列表，详情
+                Route::apiResource('topics', TopicsController::class)->only([
+                    'index', 'show'
+                ]);
+
                 // 某个用户的详情
                 Route::get('users/{user}', [UsersController::class, 'show'])
                     ->name('users.show');
@@ -79,6 +85,11 @@ Route::prefix('v1')
                     // 上传图片
                     Route::post('images', [ImagesController::class, 'store'])
                         ->name('images.store');
+
+                    // 发布话题
+                    Route::apiResource('topics', TopicsController::class)->only([
+                        'store', 'update', 'destroy'
+                    ]);
                 });
             });
     });
