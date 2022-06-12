@@ -19,6 +19,7 @@
         "overtrue/laravel-lang": "~6.0",
         "overtrue/pinyin": "~4.0",
         "predis/predis": "~1.1",
+        "propaganistas/laravel-phone": "^4.3",
         "spatie/laravel-permission": "~5.5",
         "summerblue/administrator": "9.*",
         "summerblue/laravel-active": "9.*",
