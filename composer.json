@@ -18,6 +18,7 @@
         "mews/purifier": "~3.3",
         "overtrue/easy-sms": "^2.2",
         "overtrue/laravel-lang": "~6.0",
+        "overtrue/laravel-socialite": "~4.0",
         "overtrue/pinyin": "~4.0",
         "predis/predis": "~1.1",
         "propaganistas/laravel-phone": "^4.3",
