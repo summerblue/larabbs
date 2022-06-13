@@ -90,6 +90,10 @@ Route::prefix('v1')
                     'index'
                 ]);
 
+                // 活跃用户
+                Route::get('actived/users', [UsersController::class, 'activedIndex'])
+                    ->name('actived.users.index');
+
                 // 某个用户的详情
                 Route::get('users/{user}', [UsersController::class, 'show'])
                     ->name('users.show');
