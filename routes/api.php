@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\UsersController;
+use App\Http\Controllers\Api\LinksController;
 use App\Http\Controllers\Api\ImagesController;
 use App\Http\Controllers\Api\TopicsController;
 use App\Http\Controllers\Api\RepliesController;
@@ -83,6 +84,11 @@ Route::prefix('v1')
                 // 某个用户的回复列表
                 Route::get('users/{user}/replies', [RepliesController::class, 'userIndex'])
                     ->name('users.replies.index');
+
+                // 资源推荐
+                Route::apiResource('links', LinksController::class)->only([
+                    'index'
+                ]);
 
                 // 某个用户的详情
                 Route::get('users/{user}', [UsersController::class, 'show'])
