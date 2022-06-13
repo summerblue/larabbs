@@ -120,6 +120,10 @@ Route::prefix('v1')
                     Route::get('notifications/stats', [NotificationsController::class, 'stats'])
                         ->name('notifications.stats');
 
+                    // 标记消息通知为已读
+                    Route::patch('user/read/notifications', [NotificationsController::class, 'read'])
+                        ->name('user.notifications.read');
+
                 });
             });
     });
