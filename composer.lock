@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bf3f76d493a4aa7053d3e5c295b1f384",
+    "content-hash": "b8a95ccc643621097d00d4954a0ed7ee",
     "packages": [
         {
             "name": "brick/math",
@@ -1815,6 +1815,57 @@
                 }
             ],
             "time": "2021-12-16T16:49:26+00:00"
+        },
+        {
+            "name": "kslimani/laravel-passport-grant",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kslimani/laravel-passport-grant.git",
+                "reference": "6c39434f3e229434ce6de0ac856a62524a4b3cf6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kslimani/laravel-passport-grant/zipball/6c39434f3e229434ce6de0ac856a62524a4b3cf6",
+                "reference": "6c39434f3e229434ce6de0ac856a62524a4b3cf6",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/passport": ">=4.0",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^4.0",
+                "phpunit/phpunit": "^8.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Sk\\Passport\\GrantTypesServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sk\\Passport\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Laravel Passport custom grant types provider",
+            "keywords": [
+                "grant",
+                "laravel",
+                "passport"
+            ],
+            "support": {
+                "issues": "https://github.com/kslimani/laravel-passport-grant/issues",
+                "source": "https://github.com/kslimani/laravel-passport-grant/tree/1.1.0"
+            },
+            "time": "2019-10-02T12:21:08+00:00"
         },
         {
             "name": "laravel-lang/lang",

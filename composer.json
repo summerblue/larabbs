@@ -10,6 +10,7 @@
         "gregwar/captcha": "^1.1",
         "guzzlehttp/guzzle": "^7.2",
         "intervention/image": "^2.7",
+        "kslimani/laravel-passport-grant": "^1.1",
         "laravel/framework": "^9.2",
         "laravel/horizon": "~5.9",
         "laravel/passport": "^10.4",
