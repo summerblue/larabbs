@@ -19,6 +19,7 @@
         "overtrue/easy-sms": "^2.2",
         "overtrue/laravel-lang": "~6.0",
         "overtrue/laravel-socialite": "~4.0",
+        "overtrue/laravel-wechat": "^7.0",
         "overtrue/pinyin": "~4.0",
         "php-open-source-saver/jwt-auth": "^1.4",
         "predis/predis": "~1.1",
