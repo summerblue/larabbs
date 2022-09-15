@@ -11,12 +11,13 @@ class CaptchasController extends Controller
 {
     public function store(CaptchaRequest $request, CaptchaBuilder $captchaBuilder)
     {
-        $key = 'captcha-'.Str::random(15);
+        $key = 'captcha_'.Str::random(15);
+        $cacheKey = 'captcha_'.$key;
         $phone = $request->phone;
 
         $captcha = $captchaBuilder->build();
         $expiredAt = now()->addMinutes(2);
-        \Cache::put($key, ['phone' => $phone, 'code' => $captcha->getPhrase()], $expiredAt);
+        \Cache::put($cacheKey, ['phone' => $phone, 'code' => $captcha->getPhrase()], $expiredAt);
 
         $result = [
             'captcha_key' => $key,
