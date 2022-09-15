@@ -11,7 +11,7 @@ class CaptchasController extends Controller
 {
     public function store(CaptchaRequest $request, CaptchaBuilder $captchaBuilder)
     {
-        $key = 'captcha_'.Str::random(15);
+        $key = Str::random(15);
         $cacheKey = 'captcha_'.$key;
         $phone = $request->phone;
 
