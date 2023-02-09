@@ -17,3 +17,18 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+//v1版本
+Route::prefix('v1')->name('api.v1.')->group(function() {
+    Route::get('version', function() {
+                abort(403);
+            })->name('version');
+});
+
+//测试
+// Route::prefix('v2')->name('api.v2.')->group(function() {
+//     Route::get('version', function() {
+//         return 'this version v2';
+//     })->name('version');
+// });
