@@ -16,6 +16,22 @@ class TopicsController extends Controller
 {
     public function __construct()
     {
+
+        $sms = app('easysms');
+        dd($sms);
+        try {
+            $sms->send(15622383314, [
+                'template' => 'SMS_269425735',
+                'data' => [
+                    'code' => 258369
+                ],
+            ]);
+        } catch (\Overtrue\EasySms\Exceptions\NoGatewayAvailableException $exception) {
+            $message = $exception->getException('aliyun')->getMessage();
+            dd($message);
+        }
+        dd(199);
+
         $this->middleware('auth', ['except' => ['index', 'show']]);
     }
 
