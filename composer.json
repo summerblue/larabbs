@@ -6,6 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
+        "doctrine/dbal": "^3.6",
         "guzzlehttp/guzzle": "^7.2",
         "intervention/image": "^2.7",
         "laravel/framework": "^9.2",
@@ -18,6 +19,7 @@
         "overtrue/laravel-lang": "~6.0",
         "overtrue/pinyin": "~4.0",
         "predis/predis": "~1.1",
+        "propaganistas/laravel-phone": "^5.0",
         "spatie/laravel-permission": "~5.5",
         "summerblue/administrator": "9.*",
         "summerblue/laravel-active": "9.*",
